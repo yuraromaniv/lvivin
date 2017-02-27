@@ -43,7 +43,7 @@
         <li><a class="waves-effect" href="<?php echo get_post_type_archive_link('excursions'); ?>">Екскурсії</a></li>
         <li><a class="waves-effect" href="<?php echo get_post_type_archive_link('bus_excursions'); ?>">Автобусні екскурсії</a></li>
         <li><a class="waves-effect" href="<?php echo get_post_type_archive_link('residences'); ?>">Проживання</a></li>
-        <li><a class="waves-effect" href="popular.html">Куди сходити</a></li>
+        <li><a class="waves-effect" href="<?php echo get_post_type_archive_link('places'); ?>">Куди сходити</a></li>
     </ul>
     <div id="header">
         <div class="row">
@@ -80,7 +80,7 @@
                         </a>
                     </div>
                     <div class="menu-link center">
-                        <a href="popular.html">
+                        <a href="<?php echo get_post_type_archive_link('places'); ?>">
                             <img class="menu-link-img" src="<?php echo get_template_directory_uri(); ?>/img/menu-icon/where.svg" alt="where">
                             <div>Куди сходити</div>
                         </a>

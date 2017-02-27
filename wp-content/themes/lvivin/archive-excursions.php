@@ -12,7 +12,7 @@
         </div>
         <div class="col l3 offset-l1 m3 s12">
             <div id="contactform">
-                <?php echo do_shortcode( '[contact-form-7 id="42" title="Контактна форма"]' ); ?>
+                <?php echo do_shortcode( '[contact-form-7 id="42" title="Форма для замовлення дзвінка"]' ); ?>
             </div>
         </div>
     </div>

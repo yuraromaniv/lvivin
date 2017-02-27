@@ -157,7 +157,6 @@
     add_action( 'init', 'register_cpt_residences' );
 
 
-    /*
     function register_cpt_places() {
         $labels = array( 
             'name' => _x( 'Заклади', 'places' ),
@@ -174,7 +173,7 @@
             'all_items' => _x( 'Всі заклади', 'places' ),
             'name_admin_bar' => _x( 'Куди сходити', 'places'),    //назва в адмін барі (тулбарі)
         );
-        $args = array( 
+        $args = array(
             'labels' => $labels,
             'description' => 'Куди сходити',
             'public' => true,
@@ -208,7 +207,7 @@
         register_post_type( 'places', $args );
     }
     add_action( 'init', 'register_cpt_places' );
-    */
+    
     
 
 // end register custom posts types
