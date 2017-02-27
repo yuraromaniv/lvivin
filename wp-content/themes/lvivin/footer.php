@@ -252,8 +252,7 @@ function init() {
 			iw: locations[i].iw
 		});
 		markersArray.push(marker);
-
-		if (locations[i].iw.enable === true){
+		if (locations[i].iw.enable === true) {
 			bindInfoWindow(marker, map, locations[i]);
 		}
 	}
@@ -261,10 +260,17 @@ function init() {
 </script>
 
 <script>
-	// Initialize collapse button
-	$(".button-collapse").sideNav();
-	// Initialize collapsible (uncomment the line below if you use the dropdown variation)
-	//$('.collapsible').collapsible();
+// Initialize collapse button
+$(".button-collapse").sideNav();
+// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+//$('.collapsible').collapsible();
+</script>
+<script>
+
+	$('#thumbs').delegate('img','click', function(){
+		$('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+		$('#description').html($(this).attr('alt'));
+	});
 </script>
 
 <?php wp_footer(); ?>

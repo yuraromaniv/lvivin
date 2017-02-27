@@ -68,39 +68,45 @@
                         if ( $post_count == 0 ) {
                             echo '
                                 <div class="col l5 m6 news-pad">
-                                    <div class="top-news">
-                                        <img class="top-news-img img-border" src="' . get_the_post_thumbnail_url( '', '450x300' ) . '" alt="eng">
-                                        <div class="news-description news-big-sign white-text">' . get_the_title() . '</div>
-                                        <div class="line">
-                                            <div class="block-line"></div>
+                                    <a href="' . get_the_permalink() . '">
+                                        <div class="top-news">
+                                            <img class="top-news-img img-border" src="' . get_the_post_thumbnail_url( '', '450x300' ) . '" alt="eng">
+                                            <div class="news-description news-big-sign white-text">' . get_the_title() . '</div>
+                                            <div class="line">
+                                                <div class="block-line"></div>
+                                            </div>
+                                            <div class="news-description white-text">' . short_post_desc( 375 ) . '</div>
                                         </div>
-                                        <div class="news-description white-text">' . short_post_desc( 375 ) . '</div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="col l7 m6 news-pad">';
                         }
                         else if ( $post_count > 0 && $post_count < 4) {
                             echo '
                                 <div class="col l6 m6">
-                                    <div class="top-news">
-                                        <img class="top-news-img" src="' . get_the_post_thumbnail_url( '', '300x200' ) . '" alt="eng">
-                                        <div class="news-description  white-text">' . get_the_title() . '</div>
-                                        <div class="line">
-                                            <div class="block-line"></div>
+                                    <a href="' . get_the_permalink() . '">
+                                        <div class="top-news">
+                                            <img class="top-news-img" src="' . get_the_post_thumbnail_url( '', '300x200' ) . '" alt="eng">
+                                            <div class="news-description  white-text">' . get_the_title() . '</div>
+                                            <div class="line">
+                                                <div class="block-line"></div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>';
                         }
                         else {
                             echo '
                                 <div class="col l6 m6">
-                                    <div class="top-news">
-                                        <img class="top-news-img" src="' . get_the_post_thumbnail_url( '', '300x200' ) . '" alt="eng">
-                                        <div class="news-description  white-text">' . get_the_title() . '</div>
-                                        <div class="line">
-                                            <div class="block-line"></div>
+                                    <a href="' . get_the_permalink() . '">
+                                        <div class="top-news">
+                                            <img class="top-news-img" src="' . get_the_post_thumbnail_url( '', '300x200' ) . '" alt="eng">
+                                            <div class="news-description  white-text">' . get_the_title() . '</div>
+                                            <div class="line">
+                                                <div class="block-line"></div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>'; 
                         }

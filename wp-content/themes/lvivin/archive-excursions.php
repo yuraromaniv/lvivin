@@ -54,100 +54,23 @@
         </div>
         <div class="row fix-row-bot">
             <div class="col l12 m12 І12 news-pad">
-                <div class="top-news">
-                    <div class="col l3">
-                        <img class="top-news-img img-border" src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="eng">
-                    </div>
-                    <div class="col l9">
-                        <div class="news-description news-big-sign white-text">Оглядова романтична екскурсія "Романтичний Львів"</div>
-                        <div class="news-description white-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio, quia omnis ratione rerum ab soluta, labore at corrupti tenetur delectus quam porro deleniti rem laudantium magnam iure, doloremque obcaecati!
-                        </div>
-                    </div>
-                    <div class="line">
-                        <div class="block-line"></div>
-                    </div>
-                </div>
-                <div class="top-news">
-                    <div class="col l3">
-                        <img class="top-news-img img-border" src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="eng">
-                    </div>
-                    <div class="col l9">
-                        <div class="news-description news-big-sign white-text">
-                            Оглядова романтична екскурсія "Романтичний Львів"
-                        </div>
-                        <div class="news-description white-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio, quia omnis ratione rerum ab soluta, labore at corrupti tenetur delectus quam porro deleniti rem laudantium magnam iure, doloremque obcaecati!
-                        </div>
-                    </div>
-                    <div class="line">
-                        <div class="block-line"></div>
-                    </div>
-                </div>
-                <div class="top-news">
-                    <div class="col l3">
-                        <img class="top-news-img img-border" src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="eng">
-                    </div>
-                    <div class="col l9">
-                        <div class="news-description news-big-sign white-text">
-                            Оглядова романтична екскурсія "Романтичний Львів"
-                        </div>
-                        <div class="news-description white-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio, quia omnis ratione rerum ab soluta, labore at corrupti tenetur delectus quam porro deleniti rem laudantium magnam iure, doloremque obcaecati!
-                        </div>
-                    </div>
-                    <div class="line">
-                        <div class="block-line"></div>
-                    </div>
-                </div>
-                <div class="top-news">
-                    <div class="col l3">
-                        <img class="top-news-img img-border" src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="eng">
-                    </div>
-                    <div class="col l9">
-                        <div class="news-description news-big-sign white-text">
-                            Оглядова романтична екскурсія "Романтичний Львів"
-                        </div>
-                        <div class="news-description white-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio, quia omnis ratione rerum ab soluta, labore at corrupti tenetur delectus quam porro deleniti rem laudantium magnam iure, doloremque obcaecati!
-                        </div>
-                    </div>
-                    <div class="line">
-                        <div class="block-line"></div>
-                    </div>
-                </div>
-                <div class="top-news">
-                    <div class="col l3">
-                        <img class="top-news-img img-border" src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="eng">
-                    </div>
-                    <div class="col l9">
-                        <div class="news-description news-big-sign white-text">
-                            Оглядова романтична екскурсія "Романтичний Львів"
-                        </div>
-                        <div class="news-description white-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio, quia omnis ratione rerum ab soluta, labore at corrupti tenetur delectus quam porro deleniti rem laudantium magnam iure, doloremque obcaecati!
-                        </div>
-                    </div>
-                    <div class="line">
-                        <div class="block-line"></div>
-                    </div>
-                </div>
-                <div class="top-news">
-                    <div class="col l3">
-                        <img class="top-news-img img-border" src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="eng">
-                    </div>
-                    <div class="col l9">
-                        <div class="news-description news-big-sign white-text">
-                            Оглядова романтична екскурсія "Романтичний Львів"
-                        </div>
-                        <div class="news-description white-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio, quia omnis ratione rerum ab soluta, labore at corrupti tenetur delectus quam porro deleniti rem laudantium magnam iure, doloremque obcaecati!
-                        </div>
-                    </div>
-                    <div class="line">
-                        <div class="block-line"></div>
-                    </div>
-                </div>
+                <?php
+                    $args = array(
+                        'post_type' => 'excursions',
+                        'posts_per_page' => 6,
+                        'publish' => true,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    );
+                    $query = new WP_Query( $args );
+                    //якщо є відео, які публіковані за останні $popular_days_post днів
+                    if( $query->have_posts() ) {
+                        while ( $query->have_posts() ) {
+                            $query->the_post();
+                            show_excursions();
+                        }
+                    }
+                ?>
             </div>
         </div>
     </div>

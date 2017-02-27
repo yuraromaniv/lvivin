@@ -104,6 +104,113 @@
     }
     add_action( 'init', 'register_cpt_bus_excursions' );
 
+
+    function register_cpt_residences() {
+        $labels = array( 
+            'name' => _x( 'Проживання', 'residences' ),
+            'singular_name' => _x( 'Проживання', 'residences' ),
+            'add_new' => _x( 'Додати місце для проживання', 'residences' ),
+            'add_new_item' => _x( 'Додати нове місце для проживання', 'residences' ),
+            'edit_item' => _x( 'Редагувати місце для проживання', 'residences' ),
+            'new_item' => _x( 'Нове місце для проживання', 'residences' ),
+            'view_item' => _x( 'Переглянути', 'residences' ),
+            'search_items' => _x( 'Пошук', 'residences' ),
+            'not_found' => _x( 'Місце для проживання не знайдено', 'residences' ),
+            'not_found_in_trash' => _x( 'Місць для проживання в корзині не знайдено', 'residences' ),
+            'parent_item_colon' => _x( 'Батьківський елемент', 'residences' ),
+            'all_items' => _x( 'Всі місця для проживання', 'residences' ),
+            'name_admin_bar' => _x( 'Місця для проживання', 'residences'),    //назва в адмін барі (тулбарі)
+        );
+        $args = array( 
+            'labels' => $labels,
+            'description' => 'Проживання',
+            'public' => true,
+            'publicly_queryable' => true,
+            'exclude_from_search' => false,
+            'show_ui' => true,
+            'show_in_menu' => true,
+            'show_in_nav_menus' => true,
+            'menu_position' => 6,
+            'menu_icon' => 'dashicons-welcome-write-blog',
+            'capability_type' => 'residence',    //автоматично створює потрібні повноваження
+            'capabilities' => array(
+                'edit_post' => 'edit_residence',
+                'read_post' => 'read_residence',
+                'delete_post' => 'delete_residence',
+                'edit_posts' => 'edit_residences',
+                'edit_others_posts' => 'edit_other_residences',  //дозволяє редагувати записи, які належать іншим авторам
+                'publish_posts' => 'publish_residences',
+                'read_private_posts' => 'read_private_residences',
+            ),
+            'map_meta_cap' => true,
+            'hierarchical' => true,
+            'supports' => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions' ), // 'author',
+            'taxonomies' => array( 'post_tag', 'category' ),
+            'has_archive' => true,
+            'rewrite' => true,
+            'query_var' => true,
+            'can_export' => true
+            //'delete_with_user' => true    //видаляти записи цього типу, які належать користувачеві, який видаляється
+        );
+        register_post_type( 'residences', $args );
+    }
+    add_action( 'init', 'register_cpt_residences' );
+
+
+    /*
+    function register_cpt_places() {
+        $labels = array( 
+            'name' => _x( 'Заклади', 'places' ),
+            'singular_name' => _x( 'Заклад', 'places' ),
+            'add_new' => _x( 'Додати заклад', 'places' ),
+            'add_new_item' => _x( 'Додати новий заклад', 'places' ),
+            'edit_item' => _x( 'Редагувати заклад', 'places' ),
+            'new_item' => _x( 'Новий заклад', 'places' ),
+            'view_item' => _x( 'Переглянути', 'places' ),
+            'search_items' => _x( 'Пошук', 'places' ),
+            'not_found' => _x( 'Заклад не знайдено', 'places' ),
+            'not_found_in_trash' => _x( 'Заклад в корзині не знайдено', 'places' ),
+            'parent_item_colon' => _x( 'Батьківський елемент', 'places' ),
+            'all_items' => _x( 'Всі заклади', 'places' ),
+            'name_admin_bar' => _x( 'Куди сходити', 'places'),    //назва в адмін барі (тулбарі)
+        );
+        $args = array( 
+            'labels' => $labels,
+            'description' => 'Куди сходити',
+            'public' => true,
+            'publicly_queryable' => true,
+            'exclude_from_search' => false,
+            'show_ui' => true,
+            'show_in_menu' => true,
+            'show_in_nav_menus' => true,
+            'menu_position' => 7,
+            'menu_icon' => 'dashicons-welcome-write-blog',
+            'capability_type' => 'place',    //автоматично створює потрібні повноваження
+            'capabilities' => array(
+                'edit_post' => 'edit_place',
+                'read_post' => 'read_place',
+                'delete_post' => 'delete_place',
+                'edit_posts' => 'edit_places',
+                'edit_others_posts' => 'edit_other_places',  //дозволяє редагувати записи, які належать іншим авторам
+                'publish_posts' => 'publish_places',
+                'read_private_posts' => 'read_private_places',
+            ),
+            'map_meta_cap' => true,
+            'hierarchical' => true,
+            'supports' => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions' ), // 'author',
+            'taxonomies' => array( 'post_tag', 'category' ),
+            'has_archive' => true,
+            'rewrite' => true,
+            'query_var' => true,
+            'can_export' => true
+            //'delete_with_user' => true    //видаляти записи цього типу, які належать користувачеві, який видаляється
+        );
+        register_post_type( 'places', $args );
+    }
+    add_action( 'init', 'register_cpt_places' );
+    */
+    
+
 // end register custom posts types
 
 
