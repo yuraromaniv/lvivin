@@ -21,7 +21,7 @@ html{
   max-width: 2080px;
   z-index: 3;
   position: fixed;
-  height: 100px;
+  height: 80px;
   top: 0px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -29,7 +29,7 @@ html{
 
 .logo{
   width: 100%;
-  max-height: 125px;
+  max-height: 100px;
 }
 
 .menu-link{
@@ -60,12 +60,12 @@ html{
   top: 0px;
   background-size: cover;
   background-position: center;
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 #contactform{
   position: relative;
-  margin-top: 180px;
+  margin-top: 130px;
 }
 #contactform-comment{
     position: relative;
@@ -75,9 +75,9 @@ html{
       position: relative;
       margin-top: 50px;
 }
-.menu-link-img{
-  max-width: 80px;
-  max-height: 60px;
+.menu-link-img {
+    max-width: 50px;
+    max-height: 38px;
 }
 .lang-link-img{
   max-width: 40px;
@@ -135,33 +135,17 @@ html{
 }
 .custom-input{
   position: relative;
-  background: url("img/form/mail.png") 0 50% no-repeat;
-  background-size: 60px;
-  height: 4rem !important;
-  display: inline-block !important;
-  background-color: rgba(255, 255, 255, 0.803921568627451) !important;
-}
-.custom-input:nth-child(2){
-  position: relative;
-  background: url("img/form/phone.png") 0 40% no-repeat;
-  background-size: 60px;
-  height: 4rem !important;
-  display: inline-block !important;
-  background-color: rgba(255, 255, 255, 0.803921568627451) !important;
-}
-.custom-input:nth-child(1){
-  position: relative;
-  background: url("img/form/user.png") 0 40% no-repeat;
-  background-size: 60px;
-  height: 4rem !important;
+  
+  
+  height: 3rem !important;
   display: inline-block !important;
   background-color: rgba(255, 255, 255, 0.803921568627451) !important;
 }
 
+
 ::-webkit-input-placeholder{
   position: absolute !important;
   color:black;
-  padding-left: 10px !important;
   font-size: 25px;
   font-weight: 300;
 
@@ -169,7 +153,6 @@ html{
 .form-button{
   position: relative;
   width: 100%;
-  margin-left: 20px;
   height: 50px;
   border-radius: 10px;
   background-color: #ff6666;
@@ -178,18 +161,18 @@ html{
 input[type="text"],input[type="tel"], input[type="email"]  {
   border-radius: 15px;
   font-size: 25px;
-  padding-left: 60px;
+  padding-left: 5px;
 }
 .slogan {
   clear: both;
   position: relative;
-  font-size: 35px;
+  font-size: 27px;
   color: darkred;
   font-weight: bold;
   /* width: 700px; */
   text-align: center;
-  margin-top: 110px;
-  margin-left: 100px;
+  margin-top: 90px;
+
 }
 .advantages{
   text-align: justify;
@@ -210,29 +193,31 @@ input[type="text"],input[type="tel"], input[type="email"]  {
 }
 .main-content{
   position: relative;
+  width: 90%;
 }
 .advantages-img{
   padding-top: 30px;
   max-width: 80px;
 }
 .second-slogan{
+  margin-top: 0px;
   font-size: 35px;
   color: darkred;
   font-weight: bold;
 }
 .contact-info{
   width: 100%;
-  height: 100%;
+  height: auto;
   position: relative;
   bottom: 0px;
+  margin-top: 70px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.contact-info div{
-  margin-left: -300px;
-  padding-top: 10px;
-  font-size: 25px;
-  text-align: center;
-
+.contact-info div {
+    margin-left: -150px;
+    padding-top: 10px;
+    font-size: 15px;
+    text-align: center;
 }
 .second-block{
   background-size: cover;
@@ -395,7 +380,7 @@ margin-left: 25px;
 top: 69%;
     }
     .footer-info-img{
-      max-width: 50px;
+      max-width: 35px;
     }
     .footer-info{
       position: relative;
