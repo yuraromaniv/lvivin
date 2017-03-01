@@ -34,11 +34,6 @@
 
 
 <!--НИЩЕ ВСЯКА ХЄРНЯ!-->
-<audio id="beep-one">
-    <source src="<?php echo get_template_directory_uri(); ?>/audio/beep2.mp3">
-    <source src="<?php echo get_template_directory_uri(); ?>/audio/beep2.ogg">
-    Ваш браузер не поддерживает замечательный элемент.
-</audio>
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
@@ -54,7 +49,6 @@
 
 	<script type="text/javascript">
 		jssor_1_slider_init = function() {
-
 			var jssor_1_options = {
 				$AutoPlay: true,
 				$Idle: 0,
@@ -260,13 +254,13 @@ function init() {
 </script>
 
 <script>
-// Initialize collapse button
-$(".button-collapse").sideNav();
-// Initialize collapsible (uncomment the line below if you use the dropdown variation)
-//$('.collapsible').collapsible();
+	// Initialize collapse button
+	$(".button-collapse").sideNav();
+	// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+	//$('.collapsible').collapsible();
 </script>
-<script>
 
+<script>
 	$('#thumbs').delegate('img','click', function(){
 		$('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
 		$('#description').html($(this).attr('alt'));

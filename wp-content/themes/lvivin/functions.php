@@ -5,7 +5,7 @@
     //custom capabilityes
     require 'template-parts/custom-posts-types.php';
 
-    //set_post_thumbnail_size(250, 150); // задаем размер миниатюрам 250x150
+	add_image_size('600x400', 600, 400, true); // додаємо ще один розмір картинок 600x400 з обрізанням
 	add_image_size('450x300', 450, 300, true); // додаємо ще один розмір картинок 450x300 з обрізанням
 	add_image_size('300x200', 300, 200, true); // додаємо ще один розмір картинок 300x200 з обрізанням
 
@@ -50,34 +50,3 @@
             </div>';
 	}
 
-	// Добавляем размер 2 миниатюры
-
-	//addimagesize( 'secondary-featured-thumbnail', 280, 155, true );
-	// Добавляем вторую миниатюру в админку
-	if ( class_exists('MultiPostThumbnails') ) {
-        $types = array('excursions', 'bus_excursions');
-        foreach($types as $type) {
-            new MultiPostThumbnails(array(
-                'label' => 'Secondary Image',
-                'id' => 'secondary-image',
-                'post_type' => $type
-                )
-            );
-        }
-    }
-		/*
-		new MultiPostThumbnails(
-	    	array(
-	    		'label' => 'Головне зображення 3',
-	    		'id' => 'third-image',
-	    		'post_type' => array( 'excursions', 'bus_excursions' )
-	    	)
-	    );
-	    new MultiPostThumbnails(
-	    	array(
-	    		'label' => 'Головне зображення 4',
-	    		'id' => 'fourth-image',
-	    		'post_type' => array( 'excursions', 'bus_excursions' )
-	    	)
-	    );
-	    */

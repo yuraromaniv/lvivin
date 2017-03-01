@@ -13,22 +13,10 @@
                         </div>
                     </div>
                     <div class="col l6 m3 s12">
-                        <div id="popular-slider">
-                            <div id="gallery">
-                                <div id="panel">
-                                    <img id="largeImage" src="<?php echo get_the_post_thumbnail_url( '', 'large' ); ?>" alt="popular" />
-                                </div>
-                                <div id="thumbs">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/popular-slider/image_01_thumb.jpg" alt="1st image description" />
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/popular-slider/image_02_thumb.jpg" alt="2nd image description" />
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/popular-slider/image_03_thumb.jpg" alt="3rd image description" />
-                                <?php
-                                    MultiPostThumbnails::get_post_thumbnail_url(get_post_type(), 'secondary-image');
-                                ?>
-                                </div>
-                                
-                            </div>
-                        </div>
+                        <?php
+                            //our-partners
+                            get_template_part('/template-parts/post', 'slider');
+                        ?>
                     </div>
 
                     <div class="col l6 m9 s12 ">

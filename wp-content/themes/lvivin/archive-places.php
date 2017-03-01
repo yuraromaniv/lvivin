@@ -8,23 +8,30 @@
                 <div class="block-line"></div>
             </div>
         </div>
-        <div class="col l6 m3 s12">
-            <div id="popular-slider">
-                <div id="gallery">
-                    <div id="panel">
-                        <img id="largeImage" src="<?php echo get_template_directory_uri(); ?>/img/popular-slider/image_01_large.jpg" alt="popular" />
-                    </div>
-                    <div id="thumbs">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/popular-slider/image_01_thumb.jpg" alt="1st image description" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/popular-slider/image_02_thumb.jpg" alt="2nd image description" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/popular-slider/image_03_thumb.jpg" alt="3rd image description" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col l6 m9 s12 ">
-            <div class="popular-content-text white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quas nobis iure eligendi aliquid alias sint nesciunt dicta libero, neque atque illum, a culpa earum voluptates ex magni et dignissimos!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus ea, doloribus omnis corporis, provident doloremque molestias quas voluptatem illo itaque temporibus vero autem perspiciatis id voluptatibus dolorum suscipit facilis?</div>
-        </div>
+        
+        <?php
+            $query = new WP_Query( 
+                array( 'p' => 122 )
+            );
+            if( $query->have_posts() ) {
+                while ( $query->have_posts() ) {
+                    $query->the_post();
+                    echo '
+                        <div class="col l6 m3 s12">';
+                            //our-partners
+                            get_template_part('/template-parts/post', 'slider');
+                    echo '
+                        </div>
+                        <div class="col l6 m9 s12 ">
+                            <div class="popular-content-text white-text">';
+                                the_content();
+                    echo '
+                            </div>
+                        </div>';
+                } //end while
+            } //end if
+            wp_reset_postdata();
+        ?>
     </div>
 </div><!-- /main-backgroung -->
 <div style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg/second-bg.jpg);" class="second-block">
@@ -35,78 +42,39 @@
         </div>
         <div class="row fix-row-bot">
             <div class="col l12 m12 І12 news-pad">
-                <div class="top-news">
-                    <div class="col l3">
-                        <img class="top-news-img img-border" src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="eng">
-                    </div>
-                    <div class="col l9">
-                        <div class="news-description news-big-sign white-text">Оглядова романтична екскурсія "Романтичний Львів"</div>
-                        <div class="news-description white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio, quia omnis ratione rerum ab soluta, labore at corrupti tenetur delectus quam porro deleniti rem laudantium magnam iure, doloremque obcaecati!</div>
-                    </div>
-                    <div class="line">
-                        <div class="block-line"></div>
-                    </div>
-                </div>
-                <div class="top-news">
-                    <div class="col l3">
-                        <img class="top-news-img img-border" src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="eng">
-                    </div>
-                    <div class="col l9">
-                        <div class="news-description news-big-sign white-text">Оглядова романтична екскурсія "Романтичний Львів"</div>
-                        <div class="news-description white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio, quia omnis ratione rerum ab soluta, labore at corrupti tenetur delectus quam porro deleniti rem laudantium magnam iure, doloremque obcaecati!</div>
-                    </div>
-                    <div class="line">
-                        <div class="block-line"></div>
-                    </div>
-                </div>
-                <div class="top-news">
-                    <div class="col l3">
-                        <img class="top-news-img img-border" src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="eng">
-                    </div>
-                    <div class="col l9">
-                        <div class="news-description news-big-sign white-text">Оглядова романтична екскурсія "Романтичний Львів"</div>
-                        <div class="news-description white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio, quia omnis ratione rerum ab soluta, labore at corrupti tenetur delectus quam porro deleniti rem laudantium magnam iure, doloremque obcaecati!</div>
-                    </div>
-                    <div class="line">
-                        <div class="block-line"></div>
-                    </div>
-                </div>
-                <div class="top-news">
-                    <div class="col l3">
-                        <img class="top-news-img img-border" src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="eng">
-                    </div>
-                    <div class="col l9">
-                        <div class="news-description news-big-sign white-text">Оглядова романтична екскурсія "Романтичний Львів"</div>
-                        <div class="news-description white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio, quia omnis ratione rerum ab soluta, labore at corrupti tenetur delectus quam porro deleniti rem laudantium magnam iure, doloremque obcaecati!</div>
-                    </div>
-                    <div class="line">
-                        <div class="block-line"></div>
-                    </div>
-                </div>
-                <div class="top-news">
-                    <div class="col l3">
-                        <img class="top-news-img img-border" src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="eng">
-                    </div>
-                    <div class="col l9">
-                        <div class="news-description news-big-sign white-text">Оглядова романтична екскурсія "Романтичний Львів"</div>
-                        <div class="news-description white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio, quia omnis ratione rerum ab soluta, labore at corrupti tenetur delectus quam porro deleniti rem laudantium magnam iure, doloremque obcaecati!</div>
-                    </div>
-                    <div class="line">
-                        <div class="block-line"></div>
-                    </div>
-                </div>
-                <div class="top-news">
-                    <div class="col l3">
-                        <img class="top-news-img img-border" src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="eng">
-                    </div>
-                    <div class="col l9">
-                        <div class="news-description news-big-sign white-text">Оглядова романтична екскурсія "Романтичний Львів"</div>
-                        <div class="news-description white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio, quia omnis ratione rerum ab soluta, labore at corrupti tenetur delectus quam porro deleniti rem laudantium magnam iure, doloremque obcaecati!</div>
-                    </div>
-                    <div class="line">
-                        <div class="block-line"></div>
-                    </div>
-                </div>
+                <?php
+                    $args = array(
+                        'post_type' => 'places',
+                        'posts_per_page' => 6,
+                        'publish' => true,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    );
+                    $query = new WP_Query( $args );
+                    if( $query->have_posts() ) {
+                        while ( $query->have_posts() ) {
+                            $query->the_post();
+                            echo '
+                                <div class="top-news">
+                                    <a href="' . get_the_permalink() . '">
+                                        <div class="col l3">
+                                            <img class="top-news-img img-border" src="' . get_the_post_thumbnail_url( '', '300x200' ) . '" alt="eng">
+                                        </div>
+                                        <div class="col l9">
+                                            <div class="news-description news-big-sign white-text">' . get_the_title() . ' екскурсія "Романтичний Львів"</div>
+                                            <div class="news-description white-text">' .
+                                                short_post_desc( 475 ) . '
+                                            </div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="block-line"></div>
+                                        </div>
+                                    </a>
+                                </div>';
+                        } //end while
+                    } //end if
+                    wp_reset_postdata();
+                ?>
             </div>
         </div>
     </div>

@@ -127,8 +127,21 @@
         <div class="center">
             <img class="about-img" src="<?php echo get_template_directory_uri(); ?>/img/logo/lvivin.svg" alt="eng">
         </div>
-        <div class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quod saepe libero, ipsam at dolore quidem illum modi consectetur recusandae eius hic quis ducimus sit tempore odio, cumque non amet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus consectetur a, itaque explicabo iusto provident nam repellendus quisquam qui distinctio, nostrum quaerat, voluptatibus incidunt, quas quae dicta. Quibusdam, neque sunt!
-        </div>
+        
+        <?php
+            $query = new WP_Query( 
+                array( 'p' => 138 )
+            );
+            if( $query->have_posts() ) {
+                while ( $query->have_posts() ) {
+                    $query->the_post();
+                    echo '
+                        <div class="about-text">' .
+                            get_the_content() . '
+                        </div>';
+                } //end while
+            } //end if
+        ?>
     </div>
 </div>
 

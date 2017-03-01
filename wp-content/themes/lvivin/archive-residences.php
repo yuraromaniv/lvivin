@@ -8,25 +8,28 @@
                 <div class="block-line"></div>
             </div>
         </div>
-        <div class="col l6 m3 s12">
-            <div id="popular-slider">
-                <div id="gallery">
-                    <div id="panel">
-                        <img id="largeImage" src="<?php echo get_template_directory_uri(); ?>/img/popular-slider/image_01_large.jpg" alt="popular" />
-                    </div>
-                    <div id="thumbs">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/popular-slider/image_01_thumb.jpg" alt="1st image description" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/popular-slider/image_02_thumb.jpg" alt="2nd image description" />
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/popular-slider/image_03_thumb.jpg" alt="3rd image description" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col l6 m9 s12 ">
-            <div class="popular-content-text white-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quas nobis iure eligendi aliquid alias sint nesciunt dicta libero, neque atque illum, a culpa earum voluptates ex magni et dignissimos!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus ea, doloribus omnis corporis, provident doloremque molestias quas voluptatem illo itaque temporibus vero autem perspiciatis id voluptatibus dolorum suscipit facilis?
-            </div>
-        </div>
+        <?php
+            $query = new WP_Query( 
+                array( 'p' => 118 )
+            );
+            if( $query->have_posts() ) {
+                while ( $query->have_posts() ) {
+                    $query->the_post();
+                    echo '
+                        <div class="col l6 m3 s12">';
+                            //our-partners
+                            get_template_part('/template-parts/post', 'slider');
+                    echo '
+                        </div>
+                        <div class="col l6 m9 s12 ">
+                            <div class="popular-content-text white-text">';
+                                the_content();
+                    echo '
+                            </div>
+                        </div>';
+                } //end while
+            } //end if
+        ?>
         <div class="row booking">
             <div class="col l12">
                 <div id="contactform-comment-acom">

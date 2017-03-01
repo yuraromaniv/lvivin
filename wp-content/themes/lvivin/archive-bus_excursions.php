@@ -63,7 +63,6 @@
                         'order' => 'DESC'
                     );
                     $query = new WP_Query( $args );
-                    //якщо є відео, які публіковані за останні $popular_days_post днів
                     if( $query->have_posts() ) {
                         while ( $query->have_posts() ) {
                             $query->the_post();
