@@ -19,12 +19,16 @@ html{
 
 #header{
   max-width: 2080px;
-  z-index: 3;
+  z-index: 999;
   position: fixed;
   height: 80px;
   top: 0px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.side-nav{
+  z-index: 9999 !important;
 }
 
 .logo{
@@ -42,6 +46,7 @@ html{
   position: absolute;
   right: 0px;
   color: white;
+  top: 10px;
 }
 
 .menu-link div{
@@ -85,9 +90,8 @@ html{
 }
 #button {
   position: fixed;
-  top: 25px;
+  top: 12px;
   right: 10px;
-  width: px;
   height: 100px;
   font: 40px Georgia;
   color: #fff;
@@ -347,7 +351,7 @@ padding-right: 20px;
 .comment-btn{
   background-color: darkred;
 width: 100% !important;
-margin-left: 25px;
+
 }
 .leave-comment{
   padding-bottom: 20px;
@@ -395,7 +399,7 @@ top: 69%;
     }
 
 .bus-traver{
-  margin-top: 200px;
+  margin-top: 140px;
 }
 
 .main-content-bus{
@@ -425,8 +429,8 @@ top: 69%;
 // popular-slider
 
 #thumbs { padding-top: 10px; overflow: hidden; margin: 0 auto;}
-#thumbs img, #largeImage { border: 1px solid gray; margin: 0 auto; padding: 4px; background-color: white; cursor: pointer; }
-#thumbs img { float: left; margin-right: 6px; }
+#thumbs img, #largeImage { width: 100%; border: 1px solid gray; margin: 0 auto; padding: 4px; background-color: white; cursor: pointer; }
+#thumbs img { float: left; margin-right: 6px; max-width: 100%; }
 #description { background: black; color: white; position: absolute; bottom: 0; padding: 10px 20px; width: 525px; margin: 5px; }
 #panel { position: relative; }
 
@@ -438,6 +442,7 @@ h2 a:hover { background-color: #d5dd42; }
   max-width: 100% !important ;
 }
 #popular-slider{
+  padding-left: 10px;
   margin-top: 20px;
 }
 
@@ -548,4 +553,7 @@ margin-left: 0px;
   display: inline-block !important;
   background-color: rgba(255, 255, 255, 0.803921568627451) !important;
 }
+}
+.contact-form-date{
+  border-radius: 15px !important;
 }

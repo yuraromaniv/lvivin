@@ -18,7 +18,7 @@
     </div>
     <div class="contact-info-bus">
         <div class="row">
-            <div class="col l4 offset-l1">
+            <div class="col l4 s12 offset-l1">
                 <div class="white-text">
                     <span>
                         <img class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/phone-call.svg" alt="bus">
@@ -26,7 +26,7 @@
                     <span class="footer-info-text">+380734650413</span>
                 </div>
             </div>
-            <div class="col l4">
+            <div class="col l4 s12">
                 <div class="white-text">
                     <span>
                         <img class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/mail-black-envelope-symbol.svg" alt="bus">
@@ -34,7 +34,7 @@
                     <span class="footer-info-text">romaniv.yura95@gmail.com</span>
                 </div>
             </div>
-            <div class="col l3">
+            <div class="col l3 s12">
                 <div class="white-text ">
                     <span>
                         <img class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/marker.svg" alt="bus">

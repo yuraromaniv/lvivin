@@ -6,20 +6,20 @@
             if ( have_posts() ) :
                 while ( have_posts() ) : the_post(); // Start the Loop.
         ?>
-                    <div style="margin-top: 100px;" class="col l12">
+                    <div style="margin-top: 100px;" class="col l12 s12">
                         <div class="sign-line"><?php echo get_the_title(); ?></div>
                         <div class="line">
                             <div class="block-line-black"></div>
                         </div>
                     </div>
-                    <div class="col l6 m3 s12">
+                    <div class="col l6 m12 s12">
                         <?php
                             //our-partners
                             get_template_part('/template-parts/post', 'slider');
                         ?>
                     </div>
 
-                    <div class="col l6 m9 s12 ">
+                    <div class="col l6 m12 s12 ">
                         <div class="popular-content-text">
                             <?php the_content(); ?>
                         </div>

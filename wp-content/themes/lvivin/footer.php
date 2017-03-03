@@ -21,7 +21,7 @@
             <span class="footer-info-text">м. Львів, вул. Зелена, 82</span>
 
         </div>
-        <div class="col l3 m12 s12 fot-tab-cen">
+        <div class="col l3 m12 s12 fot-tab-cen center">
             <span>
                 <img class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/fb.svg" alt="bus">
             </span>

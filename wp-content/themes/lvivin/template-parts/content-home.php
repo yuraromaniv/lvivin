@@ -152,10 +152,10 @@
             <div class="block-line "></div>
         </div>
 
-        <?php echo do_shortcode( '[testimonial_view id=1]' ); ?>
+        <?php //echo do_shortcode( '[testimonial_view id=1]' ); ?>
 
-        <?php echo do_shortcode( '[testimonial_view id=2]' ); ?>
-        <!--
+        <?php //echo do_shortcode( '[testimonial_view id=2]' ); ?>
+        
         <div class="comment-bg ">
             <div class="row comment-pad">
                 <div class="col l3 m3 ">
@@ -206,13 +206,12 @@
                         <input  class="custom-input" name="name" placeholder="Ваше імя" required="" tabindex="1" type="text"> 
                         <input  class="custom-input" placeholder="Ваш телефон" required="" tabindex="2" type="tel" name="usrtel"> 
                         <div  class="col offset-l1 l6 offset-m1 m6  s12 center hide-on-med-and-up">  <textarea style="width: 100%;"  class="comment-area" placeholder="Коментар" required="" tabindex="2" > </textarea> </div>
-                        <input class="btn center comment-btn " name="submit"  tabindex="5" value="Відправити" type="submit">   
+                        <input class="btn center comment-btn form-button" name="submit"  tabindex="5" value="Відправити" type="submit">   
                     </div>
                     <div  class="col offset-l1 l6 offset-m1 m6  s12 center hide-on-small-only">  <textarea style="width: 100%;"  class="comment-area" placeholder="Коментар" required="" tabindex="2" > </textarea> </div>
                 </div>
             </form> 
         </div>
-        -->
     </div>
 </div>
 
