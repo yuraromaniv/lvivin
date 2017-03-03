@@ -4,7 +4,7 @@
 		<div class="block-line-black "></div>
 	</div>
 	<div class="center partners-slider">
-		<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:350px;overflow:hidden;visibility:hidden;">
+		<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:230px;overflow:hidden;visibility:hidden;">
 			<!-- Loading Screen -->
 			<div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
 				<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
