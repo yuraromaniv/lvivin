@@ -23,11 +23,11 @@
                 <div>Порадимо найпопулярніші туристичні місця
                 </div>
             </div>
+            <div class="second-slogan center">Найкращі традиції Львова!</div>
         </div>
-        <div class="second-slogan center">Найкращі традиції Львова!</div>
     </div>
     <div class="contact-info center">
-        <div class="white-text ">
+        <div class="white-text">
             <span><img class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/phone-call.svg" alt="bus"></span>
             <span class="footer-info-text">+380734650413</span>
         </div>
@@ -164,8 +164,10 @@
                     </div>
                 </div>
                 <div class="col l9 m9">
+                <div class="comment-time">15:10</div>
+                 <div class="comment-date">28.06.2017</div>
                     <div class="black-text comment-text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit deleniti eum aperiam porro beatae totam quos maiores praesentium, dicta exercitationem!</div>
-                    <div class="comment-date">28.06.1995</div>
+                   
                 </div>
             </div>
         </div>
@@ -177,8 +179,9 @@
                     </div>
                 </div>
                 <div class="col l9 m9">
+                    <div class="comment-time">15:10</div>
+                    <div class="comment-date">28.06.2017</div>
                     <div class="black-text comment-text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit deleniti eum aperiam porro beatae totam quos maiores praesentium, dicta exercitationem!</div>
-                    <div class="comment-date">28.06.1997</div>
                 </div>
             </div>
         </div>
@@ -190,8 +193,9 @@
                     </div>
                 </div>
                 <div class="col l9 m9">
+                    <div class="comment-time">15:10</div>
+                    <div class="comment-date">28.06.2017</div>
                     <div class="black-text comment-text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit deleniti eum aperiam porro beatae totam quos maiores praesentium, dicta exercitationem!</div>
-                    <div class="comment-date">28.06.1996</div>
                 </div>
             </div>
         </div>

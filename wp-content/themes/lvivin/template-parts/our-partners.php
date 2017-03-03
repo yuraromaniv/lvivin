@@ -12,34 +12,34 @@
 			</div>
 			<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:100%;height:350px;overflow:hidden;">
 				<div>
-					<a href="URL"> <img data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners.png" /> </a>
+					<a href="URL"> <img class="partners-img" data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners.png" /> </a>
 				</div>
 				<div>
-					<a href="URL"> <img data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners1.gif" /></a>
+					<a href="URL"> <img class="partners-img" data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners1.gif" /></a>
 				</div>
 				<div>
-					<a href="URL">  <img data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners2.png" /></a>
+					<a href="URL">  <img class="partners-img" data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners2.png" /></a>
 				</div>
 				<div>
-					<a href="URL"> <img data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners3.png" /></a>
+					<a href="URL"> <img class="partners-img" data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners3.png" /></a>
 				</div>
 				<div>
-					<a href="URL"> <img data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners4.jpg" /></a>
+					<a href="URL"> <img class="partners-img" data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners4.jpg" /></a>
 				</div>
 				<div>
-					<a href="URL"> <img data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners.png" /></a>
+					<a href="URL"> <img class="partners-img" data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners.png" /></a>
 				</div>
 				<div>
-					<a href="URL"> <img data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners1.gif" /></a>
+					<a href="URL"> <img class="partners-img" data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners1.gif" /></a>
 				</div>
 				<div>
-					<a href="URL"> <img data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners2.png" /></a>
+					<a href="URL"> <img class="partners-img" data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners2.png" /></a>
 				</div>
 				<div>
-					<a href="URL"> <img data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners3.png" /></a>
+					<a href="URL"> <img class="partners-img" data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners3.png" /></a>
 				</div>
 				<div>
-					<a href="URL"> <img data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners4.jpg" /></a>
+					<a href="URL"> <img class="partners-img" data-u="image" alt="partners" src="<?php echo get_template_directory_uri(); ?>/img/partners/partners4.jpg" /></a>
 				</div>
 			</div>
 		</div>

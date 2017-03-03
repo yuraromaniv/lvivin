@@ -24,7 +24,7 @@ html{
   height: 80px;
   top: 0px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .side-nav{
@@ -70,7 +70,7 @@ html{
 }
 #contactform{
   position: relative;
-  margin-top: 130px;
+  margin-top: 185px;
 }
 #contactform-comment{
     position: relative;
@@ -139,32 +139,34 @@ html{
 }
 .custom-input{
   position: relative;
-  
-  
-  height: 3rem !important;
+  height: 2rem !important;
   display: inline-block !important;
   background-color: rgba(255, 255, 255, 0.803921568627451) !important;
 }
-
-
+input:focus{
+    border-bottom: 1px solid #C62828 !important;
+    box-shadow: 0 1px 0 0 #C62828 !important;
+}
 ::-webkit-input-placeholder{
-  position: absolute !important;
   color:black;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 300;
 
 }
 .form-button{
   position: relative;
   width: 100%;
-  height: 50px;
+  height: 40px;
   border-radius: 10px;
-  background-color: #ff6666;
+  background-color: #C62828;
   opacity: 0.9;
+}
+.form-button:hover{
+  background-color: #E53935;
 }
 input[type="text"],input[type="tel"], input[type="email"]  {
   border-radius: 15px;
-  font-size: 25px;
+  font-size: 18px;
   padding-left: 5px;
 }
 .slogan {
@@ -204,7 +206,7 @@ input[type="text"],input[type="tel"], input[type="email"]  {
   max-width: 80px;
 }
 .second-slogan{
-  margin-top: 0px;
+  margin-top: 20px;
   font-size: 35px;
   color: darkred;
   font-weight: bold;
@@ -214,14 +216,18 @@ input[type="text"],input[type="tel"], input[type="email"]  {
   height: auto;
   position: relative;
   bottom: 0px;
-  margin-top: 70px;
+  margin-top: 28px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.contact-info div {
-    margin-left: -150px;
+.contact-info div{
     padding-top: 10px;
     font-size: 15px;
-    text-align: center;
+}
+.main-content-bus #contactform{
+ margin-top: 145px;
+}
+.contact-info div:last-child{
+    padding-bottom: 10px;
 }
 .second-block{
   background-size: cover;
@@ -254,8 +260,7 @@ input[type="text"],input[type="tel"], input[type="email"]  {
 .six-content{
   position: relative;
   z-index: 5;
-  height: 80px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: black;
 }
 .line-main{
   padding-left: 20px;
@@ -294,7 +299,7 @@ padding-bottom: 10px;
 padding-bottom: 10px;
 
 }
-@CHARSET "UTF-8";
+
 
 .top-news-img{
   max-width: 100%;
@@ -327,7 +332,7 @@ padding-bottom: 10px;
   max-width: 100%;
 }
 .comment-pad{
-  padding: 5px 20px 10px 20px;
+  padding: 5px 0px 10px 0px;
 }
 .comment-bg{
   width: 95%;
@@ -341,8 +346,13 @@ padding-right: 20px;
   padding-top: 10px;
 }
 .comment-date{
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: bold; 
+}
+.comment-time{
+  font-size: 13px;
+  font-weight: bold; 
+  margin-top: 10px;
 }
 .contactform-pad{
   padding-left: 20px !important;
@@ -364,7 +374,7 @@ width: 100% !important;
   padding-bottom: 10px;
 }
 #mapkit-9997 {
-  margin-top: -80px;
+ 
   position: relative;
         height:500px;
         width:100%;
@@ -372,30 +382,30 @@ width: 100% !important;
     }
     .footer{
        max-width: 2080px;
-       position: absolute;
+       position: relative;
      bottom: 0px;
      width: 100%;
      z-index: 999;
-    }
-    .footer-img{
-      position: absolute;
-      bottom: -30px;
-      width: 100% ;
     }
     .footer-text{
       color: white;
       bottom: 0px;
     }
     .footer-text-block{
-      position: absolute;
+      position: relative;
       z-index: 9999;
-      bottom: 0px;
+  
       width: 100%;
-    }
+      }
     .footer-info-img{
       max-width: 35px;
+
     }
-  
+  .footer-img{
+      position: absolute;
+      bottom: -30px;
+      width: 100% ;
+    }
 
 .bus-traver{
   margin-top: 140px;
@@ -466,5 +476,8 @@ h2 a:hover { background-color: #d5dd42; }
 .contact-form-date{
   border-radius: 15px !important;
 }
-
+.partners-img{
+  width: 70% !important;
+  height: 70% !important;
+}
 

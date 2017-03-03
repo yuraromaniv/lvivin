@@ -46,6 +46,9 @@
       bottom: 0px;
       width: 100% ;
     }
+    .footer-text-block {
+    bottom: 0px;
+}
   }
       
 

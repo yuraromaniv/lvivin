@@ -1,40 +1,51 @@
 <div style=" background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg/fifth-bg.jpg);" class="fifth-block">
 
-    <?php
-        //our-partners
-        get_template_part('/template-parts/our', 'partners');
-    ?>
-    <div class="six-content">
-        <div class="sign-line white-text center contact-sign">КОНТАКТИ</div>
-    </div>
-    <div id='mapkit-9997'></div>
-    <div class="footer">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/footer/lviv_silhouette.svg" alt="footer" class="hide-on-med-and-down footer-img"/>
-     <img src="<?php echo get_template_directory_uri(); ?>/img/footer/lviv_silhouette2.svg" alt="footer" class="hide-on-small-only hide-on-large-only footer-img"/>
-      <img src="<?php echo get_template_directory_uri(); ?>/img/footer/lviv_silhouette3.svg" alt="footer" class="hide-on-med-and-up footer-img"/>
-    <div class="footer-text-block">
-    		<div class="footer-text">fdfdfdfdfd</div>
-    		<div class="footer-text">fdfdfdf</div>
-    		<div class="footer-text">dfdfdfd</div>
-    		<div class="footer-text">sdsdsdsd</div>
-    		</div>
-    	</div>
+	<?php
+//our-partners
+	get_template_part('/template-parts/our', 'partners');
+	?>
 </div>
+<div class="six-content">
+	<div class="sign-line white-text center contact-sign">КОНТАКТИ</div>
+	<div style="margin-bottom: 0;" class="footer-text-block row center">
+	<div class="white-text col l3 m4 s12">
+			<span><img style="max-width: 25px;" class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/phone-call.svg" alt="bus"></span>
+			<span class="footer-info-text">+380734650413</span>
+		</div>
+		<div class="white-text col l3 m4 s12">
+			<span>
+				<img class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/mail-black-envelope-symbol.svg" alt="bus">
+			</span>
+			<span class="footer-info-text">lvivin@gmail.com</span>
+		</div>
+		<div class="white-text col l3 m4 s12">
+			<span>
+				<img style="max-width: 25px;" class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/marker.svg" alt="bus"></span>
+				<span class="footer-info-text">м. Львів, вул. Зелена, 82</span>
+			</div>
+			<div class="white-text col l3 m12 s12">
+				<img class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/vk.svg" alt="bus">
+				<img class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/fb.svg" alt="bus">
+
+			</div>
+		</div>
+	</div>
+
+	<div id='mapkit-9997'></div>
+	<div class="footer">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/footer/lviv_silhouette.svg" alt="footer" class="hide-on-med-and-down footer-img"/>
+		<img src="<?php echo get_template_directory_uri(); ?>/img/footer/lviv_silhouette2.svg" alt="footer" class="hide-on-small-only hide-on-large-only footer-img"/>
+		<img src="<?php echo get_template_directory_uri(); ?>/img/footer/lviv_silhouette3.svg" alt="footer" class="hide-on-med-and-up footer-img"/>
+	</div>
 
 
-<!--НИЩЕ ВСЯКА ХЄРНЯ!-->
-<!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jssor.slider-22.2.8.min.js" type="text/javascript"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOlbn3nbFpK7G2GQqlg55ZIsixt57zo0o&extension=.js"></script> 
-<script src="https://cdn.mapkit.io/v1/infobox.js"></script> 
-<script>
-	var beepOne = $("#beep-one")[0];
-	$("#button")
-	.mouseenter(function() {
-		beepOne.play();
-	});</script>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/jssor.slider-22.2.8.min.js" type="text/javascript"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOlbn3nbFpK7G2GQqlg55ZIsixt57zo0o&extension=.js"></script> 
+	<script src="https://cdn.mapkit.io/v1/infobox.js"></script> 
 
 	<script type="text/javascript">
 		jssor_1_slider_init = function() {
@@ -243,10 +254,10 @@ function init() {
 </script>
 
 <script>
-	// Initialize collapse button
-	$(".button-collapse").sideNav();
-	// Initialize collapsible (uncomment the line below if you use the dropdown variation)
-	//$('.collapsible').collapsible();
+// Initialize collapse button
+$(".button-collapse").sideNav();
+// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+//$('.collapsible').collapsible();
 </script>
 
 <script>
