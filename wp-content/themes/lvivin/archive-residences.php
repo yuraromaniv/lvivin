@@ -39,16 +39,4 @@
         </div>
     </div>
 </div><!-- /main-backgroung -->
-
-<div style=" background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg/fifth-bg.jpg);" class="fifth-block">
-    <?php
-        //our-partners
-        get_template_part('/template-parts/our', 'partners');
-    ?>
-    <div class="six-content">
-        <div class="sign-line white-text center contact-sign">КОНТАКТИ</div>
-    </div>
-    <div id='mapkit-9997'></div>
-</div>
-
 <?php get_footer(); ?>

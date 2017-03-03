@@ -1,0 +1,61 @@
+  @media screen and (max-width: 768px) {
+   .footer-img{
+      position: absolute;
+      bottom: 0px;
+      width: 100% ;
+    }
+  input[type="text"],input[type="tel"], input[type="email"]  {
+    border-radius: 15px;
+    font-size: 25px;
+    padding-left: 0px;
+  }
+  .form-button {
+    margin-left: 0px;
+  }
+  .comment-btn {
+
+    margin-left: 0px;
+  }
+  .partners-slider {
+    margin-top: 20px;
+  }
+  .social-tab-top{
+    margin-top: -30px;
+  }
+  .slogan {
+    width: auto;
+    margin-top: 0px; 
+    margin-left: 0px; 
+  }
+  .contact-info div {
+    margin-left: -250px;
+  }
+  .advantages {
+    margin-left: 0px;
+  }
+
+  .custom-input{
+    position: relative;
+    background: none;
+    background-size: 60px;
+    height: 4rem !important;
+    display: inline-block !important;
+    background-color: rgba(255, 255, 255, 0.803921568627451) !important;
+  }
+  .custom-input:nth-child(2){
+    position: relative;
+    background: none;
+    background-size: 60px;
+    height: 4rem !important;
+    display: inline-block !important;
+    background-color: rgba(255, 255, 255, 0.803921568627451) !important;
+  }
+  .custom-input:nth-child(1){
+    position: relative;
+    background: none;
+    background-size: 60px;
+    height: 4rem !important;
+    display: inline-block !important;
+    background-color: rgba(255, 255, 255, 0.803921568627451) !important;
+  }
+}

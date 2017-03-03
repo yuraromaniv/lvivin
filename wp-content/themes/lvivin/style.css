@@ -372,31 +372,30 @@ width: 100% !important;
     }
     .footer{
        max-width: 2080px;
-      height: 250px;
-      position: absolute;
-      margin-top: -230px;
-      z-index: 9999;
-      width: 100%;
-      background-size: cover;
+       position: absolute;
+     bottom: 0px;
+     width: 100%;
+     z-index: 999;
     }
-    .footer-info-block{
-      position: relative;
-top: 69%;
+    .footer-img{
+      position: absolute;
+      bottom: -30px;
+      width: 100% ;
+    }
+    .footer-text{
+      color: white;
+      bottom: 0px;
+    }
+    .footer-text-block{
+      position: absolute;
+      z-index: 9999;
+      bottom: 0px;
+      width: 100%;
     }
     .footer-info-img{
       max-width: 35px;
     }
-    .footer-info{
-      position: relative;
-      margin-top: -60px;
-      
-      
-    }
-    .footer-info-text{
-      position: absolute;
-      margin-top: 10px;
-      margin-left: 10px;
-    }
+  
 
 .bus-traver{
   margin-top: 140px;
@@ -464,96 +463,8 @@ h2 a:hover { background-color: #d5dd42; }
 .single-contact{
   margin-left: 20px;
 }
-
-
-// medial
-     /* tablet */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-.footer-info-block {
-    position: relative;
-    top: 53%;
-}
-.footer{
-  margin-top: -205px;
-}
-.fot-tab-cen{
-  text-align: center;
-}
-}
-@media screen and (max-width: 768px) {
-  .footer {
-    margin-top: -208px;
-  }
-.footer-info-block {
-    top: 50%;
-}
-.footer-info-img {
-    max-width: 21px;
-}
-.footer-info-text {
-
-    margin-top: 0px;
-
-}
-
-  input[type="text"],input[type="tel"], input[type="email"]  {
-  border-radius: 15px;
-  font-size: 25px;
-  padding-left: 0px;
-}
-.form-button {
-    margin-left: 0px;
-}
-.comment-btn {
-
-    margin-left: 0px;
-}
-.partners-slider {
-    margin-top: 20px;
-}
-.slogan {
-
-     width: auto;
-
-    margin-top: 0px; 
-    margin-left: 0px; 
-}
-.contact-info div {
-    margin-left: -250px;
-    }
-.advantages {
-margin-left: 0px;
-}
-.footer-info-text{
-  font-size: 19px;
-}
-
-.custom-input{
- position: relative;
-  background: none;
-  background-size: 60px;
-  height: 4rem !important;
-  display: inline-block !important;
-  background-color: rgba(255, 255, 255, 0.803921568627451) !important;
-
-}
-.custom-input:nth-child(2){
-  position: relative;
-  background: none;
-  background-size: 60px;
-  height: 4rem !important;
-  display: inline-block !important;
-  background-color: rgba(255, 255, 255, 0.803921568627451) !important;
-}
-.custom-input:nth-child(1){
-  position: relative;
-  background: none;
-  background-size: 60px;
-  height: 4rem !important;
-  display: inline-block !important;
-  background-color: rgba(255, 255, 255, 0.803921568627451) !important;
-}
-}
 .contact-form-date{
   border-radius: 15px !important;
 }
+
+

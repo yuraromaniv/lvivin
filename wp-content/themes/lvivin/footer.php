@@ -1,35 +1,24 @@
-<div style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/footer/lviv_silhouette.svg); " class="footer">
-    <div id="footer-align-fix" class="row white-text footer-info-block " >
-        <div class="col l3 m12 s12">
-            <span>
-                <img class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/phone-call.svg" alt="bus">
-            </span>
-            <span class="footer-info-text">+380734650413</span>
+<div style=" background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg/fifth-bg.jpg);" class="fifth-block">
 
-        </div>
-        <div class="col l3 m12 s12">
-            <span>
-                <img class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/mail-black-envelope-symbol.svg" alt="bus">
-            </span>
-            <span class="footer-info-text">romaniv.yura95@gmail.com</span>
-
-        </div>
-        <div class="col l3 m12 s12">
-            <span>
-                <img class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/marker.svg" alt="bus">
-            </span>
-            <span class="footer-info-text">м. Львів, вул. Зелена, 82</span>
-
-        </div>
-        <div class="col l3 m12 s12 fot-tab-cen center">
-            <span>
-                <img class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/fb.svg" alt="bus">
-            </span>
-            <span>
-                <img class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/vk.svg" alt="bus">
-            </span>
-        </div>
+    <?php
+        //our-partners
+        get_template_part('/template-parts/our', 'partners');
+    ?>
+    <div class="six-content">
+        <div class="sign-line white-text center contact-sign">КОНТАКТИ</div>
     </div>
+    <div id='mapkit-9997'></div>
+    <div class="footer">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/footer/lviv_silhouette.svg" alt="footer" class="hide-on-med-and-down footer-img"/>
+     <img src="<?php echo get_template_directory_uri(); ?>/img/footer/lviv_silhouette2.svg" alt="footer" class="hide-on-small-only hide-on-large-only footer-img"/>
+      <img src="<?php echo get_template_directory_uri(); ?>/img/footer/lviv_silhouette3.svg" alt="footer" class="hide-on-med-and-up footer-img"/>
+    <div class="footer-text-block">
+    		<div class="footer-text">fdfdfdfdfd</div>
+    		<div class="footer-text">fdfdfdf</div>
+    		<div class="footer-text">dfdfdfd</div>
+    		<div class="footer-text">sdsdsdsd</div>
+    		</div>
+    	</div>
 </div>
 
 
