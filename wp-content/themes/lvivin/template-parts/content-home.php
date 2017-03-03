@@ -117,8 +117,8 @@
         </div>
     </div>
 </div>
-
-<div style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg/third-bg.jpg);" class="third-block">
+<div style="height: 50px; position: absolute; margin-top: -80px;" id="anchor"> </div>
+<div  style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg/third-bg.jpg);" class="third-block">
     <div class="container third-content">
         <div class="sign-line">ПРО НАС</div>
         <div class="line-main">

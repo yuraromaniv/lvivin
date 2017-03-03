@@ -62,11 +62,12 @@
         <li><a class="waves-effect" href="<?php echo get_post_type_archive_link('bus_excursions'); ?>">Автобусні екскурсії</a></li>
         <li><a class="waves-effect" href="<?php echo get_post_type_archive_link('residences'); ?>">Проживання</a></li>
         <li><a class="waves-effect" href="<?php echo get_post_type_archive_link('places'); ?>">Куди сходити</a></li>
+        <li><a class="waves-effect" href="<?php echo get_home_url(); ?>/#anchor">Про нас</a></li>
     </ul>
     <div id="header">
         <div class="row">
-            <div class="col l3 m12 s12">
-                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/lvivin.svg" alt="Логотип">
+            <div class="col l3 m12 s12"><a href="<?php echo get_home_url(); ?>">
+                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/lvivin.svg" alt="Логотип"></a>
                 <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only">
                     <i style="font-size: 50px;" class="material-icons">menu</i>
                 </a>
@@ -104,7 +105,7 @@
                         </a>
                     </div>
                     <div class="menu-link center">
-                        <a href="URL">
+                        <a href="<?php echo get_home_url(); ?>/#anchor">
                             <img class="menu-link-img" src="<?php echo get_template_directory_uri(); ?>/img/menu-icon/info.svg" alt="info">
                             <div>Про нас</div>
                         </a>
