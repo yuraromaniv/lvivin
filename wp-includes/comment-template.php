@@ -1292,7 +1292,7 @@ function comments_template( $file = '/comments.php', $separate_comments = false 
 	global $wp_query, $withcomments, $post, $wpdb, $id, $comment, $user_login, $user_ID, $user_identity, $overridden_cpage;
 
 	if ( !(is_single() || is_page() || $withcomments) || empty($post) )
-		return;
+		//return;
 
 	if ( empty($file) )
 		$file = '/comments.php';

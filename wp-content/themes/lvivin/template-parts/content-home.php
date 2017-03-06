@@ -111,8 +111,8 @@
                             </div>'; 
                         }
                         $post_count++;
-                    }
-                }
+                    } //end while
+                } //end if
             ?>
         </div>
     </div>
@@ -140,6 +140,10 @@
                             get_the_content() . '
                         </div>';
                 } //end while
+                $withcomments = "1";
+                if ( comments_open() || get_comments_number() ) {
+                    comments_template('', true); // если комментирование открыто - мы покажем список комментариев и форму, если закрыто, но кол-во комментов > 0 - покажем только список комментариев
+                } //end if
             } //end if
         ?>
     </div>
@@ -209,7 +213,7 @@
                     <div class="col l5 m5 і12">
                         <input  class="custom-input" name="name" placeholder="Ваше імя" required="" tabindex="1" type="text"> 
                         <input  class="custom-input" placeholder="Ваш телефон" required="" tabindex="2" type="tel" name="usrtel"> 
-                        <div  class="col offset-l1 l6 offset-m1 m6  s12 center hide-on-med-and-up">  <textarea style="width: 100%;"  class="comment-area" placeholder="Коментар" required="" tabindex="2" > </textarea> </div>
+                        <div class="col offset-l1 l6 offset-m1 m6  s12 center hide-on-med-and-up">  <textarea style="width: 100%;"  class="comment-area" placeholder="Коментар" required="" tabindex="2" > </textarea> </div>
                         <input class="btn center comment-btn form-button" name="submit"  tabindex="5" value="Відправити" type="submit">   
                     </div>
                     <div  class="col offset-l1 l6 offset-m1 m6  s12 center hide-on-small-only">  <textarea style="width: 100%;"  class="comment-area" placeholder="Коментар" required="" tabindex="2" > </textarea> </div>

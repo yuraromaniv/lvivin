@@ -18,7 +18,6 @@
                             get_template_part('/template-parts/post', 'slider');
                         ?>
                     </div>
-
                     <div class="col l6 m12 s12 ">
                         <div class="popular-content-text">
                             <?php the_content(); ?>
@@ -53,6 +52,11 @@
                                     <div class="bold-text">Ціна:</div>
                                     <div class="desc-text">100500грн</div>
                                 </div>
+                                <?php
+                                    if ( comments_open() || get_comments_number() ) {
+                                        comments_template('', true); // если комментирование открыто - мы покажем список комментариев и форму, если закрыто, но кол-во комментов > 0 - покажем только список комментариев
+                                    } //end if
+                                ?>
                             </div>
                             <div class="col l4"> 
                                 <?php echo do_shortcode( '[contact-form-7 id="53" title="Форма для замовлення екскурсії"]' ); ?>
