@@ -7,6 +7,9 @@
 </div>
 <div class="six-content">
 	<div class="sign-line white-text center contact-sign">КОНТАКТИ</div>
+	<div class="line-main">
+		<div class="block-line-white "></div>
+	</div>
 	<div style="margin-bottom: 0;" class="footer-text-block row center">
 	<div class="white-text col l3 m4 s12">
 			<span><img style="max-width: 25px;" class="footer-info-img" src="<?php echo get_template_directory_uri(); ?>/img/footer/phone-call.svg" alt="bus"></span>

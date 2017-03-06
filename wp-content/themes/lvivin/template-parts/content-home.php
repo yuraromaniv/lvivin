@@ -125,7 +125,7 @@
             <div class="block-line-black "></div>
         </div>
         <div class="center">
-            <img class="about-img" src="<?php echo get_template_directory_uri(); ?>/img/logo/lvivin.svg" alt="eng">
+            <img class="about-img" src="<?php echo get_template_directory_uri(); ?>/img/logo/lvivin.png" alt="eng">
         </div>
         
         <?php

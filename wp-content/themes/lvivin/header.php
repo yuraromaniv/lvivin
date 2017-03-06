@@ -66,8 +66,8 @@
     </ul>
     <div id="header">
         <div class="row">
-            <div class="col l3 m12 s12"><a href="<?php echo get_home_url(); ?>">
-                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/lvivin.svg" alt="Логотип"></a>
+            <div class="col l3 m12 s12 center"><a href="<?php echo get_home_url(); ?>">
+                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/lvivin.png" alt="Логотип"></a>
                 <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only">
                     <i style="font-size: 50px;" class="material-icons">menu</i>
                 </a>
