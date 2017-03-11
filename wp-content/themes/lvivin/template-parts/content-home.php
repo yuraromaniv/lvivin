@@ -118,7 +118,7 @@
     </div>
 </div>
 <div style="height: 50px; position: absolute; margin-top: -80px;" id="anchor"> </div>
-<div  style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg/third-bg.jpg);" class="third-block">
+<div style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg/third-bg.jpg);" class="third-block">
     <div class="container third-content">
         <div class="sign-line">ПРО НАС</div>
         <div class="line-main">
@@ -154,52 +154,46 @@
         <div class="sign-line white-text">ВІДГУКИ</div>
         <div class="line-main">
             <div class="block-line "></div>
-        </div>
-
-        <?php //echo do_shortcode( '[testimonial_view id=1]' ); ?>
-
-        <?php //echo do_shortcode( '[testimonial_view id=2]' ); ?>
-        
+        </div>        
         <div class="comment-bg ">
             <div class="row comment-pad">
                 <div class="col l3 m3 ">
-                    <div class="">
-                        <img class="comment-img" src="<?php echo get_template_directory_uri(); ?>/img/comment/comment1.jpg" alt="comment">
-                    </div>
+                    <img class="comment-img" src="<?php echo get_template_directory_uri(); ?>/img/comment/comment1.jpg" alt="comment">
                 </div>
                 <div class="col l9 m9">
                 <div class="comment-time">15:10</div>
                  <div class="comment-date">28.06.2017</div>
-                    <div class="black-text comment-text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit deleniti eum aperiam porro beatae totam quos maiores praesentium, dicta exercitationem!</div>
-                   
+                    <div class="black-text comment-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit deleniti eum aperiam porro beatae totam quos maiores praesentium, dicta exercitationem!
+                    </div>
                 </div>
             </div>
         </div>
         <div class="comment-bg ">
             <div class="row comment-pad">
-                <div class="col l3 m3">
-                    <div class="">
-                        <img class="comment-img" src="<?php echo get_template_directory_uri(); ?>/img/comment/comment2.jpg" alt="comment">
-                    </div>
+                <div class="col l3 m3 ">
+                    <img class="comment-img" src="<?php echo get_template_directory_uri(); ?>/img/comment/comment2.jpg" alt="comment">
                 </div>
                 <div class="col l9 m9">
-                    <div class="comment-time">15:10</div>
-                    <div class="comment-date">28.06.2017</div>
-                    <div class="black-text comment-text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit deleniti eum aperiam porro beatae totam quos maiores praesentium, dicta exercitationem!</div>
+                <div class="comment-time">15:10</div>
+                 <div class="comment-date">28.06.2017</div>
+                    <div class="black-text comment-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit deleniti eum aperiam porro beatae totam quos maiores praesentium, dicta exercitationem!
+                    </div>
                 </div>
             </div>
         </div>
         <div class="comment-bg ">
             <div class="row comment-pad">
-                <div class="col l3 m3">
-                    <div class="">
-                        <img class="comment-img" src="<?php echo get_template_directory_uri(); ?>/img/comment/comment3.jpg" alt="comment">
-                    </div>
+                <div class="col l3 m3 ">
+                    <img class="comment-img" src="<?php echo get_template_directory_uri(); ?>/img/comment/comment3.jpg" alt="comment">
                 </div>
                 <div class="col l9 m9">
-                    <div class="comment-time">15:10</div>
-                    <div class="comment-date">28.06.2017</div>
-                    <div class="black-text comment-text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit deleniti eum aperiam porro beatae totam quos maiores praesentium, dicta exercitationem!</div>
+                <div class="comment-time">15:10</div>
+                 <div class="comment-date">28.06.2017</div>
+                    <div class="black-text comment-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit deleniti eum aperiam porro beatae totam quos maiores praesentium, dicta exercitationem!
+                    </div>
                 </div>
             </div>
         </div>
@@ -213,10 +207,11 @@
                     <div class="col l5 m5 і12">
                         <input  class="custom-input" name="name" placeholder="Ваше імя" required="" tabindex="1" type="text"> 
                         <input  class="custom-input" placeholder="Ваш телефон" required="" tabindex="2" type="tel" name="usrtel"> 
-                        <div class="col offset-l1 l6 offset-m1 m6  s12 center hide-on-med-and-up">  <textarea style="width: 100%;"  class="comment-area" placeholder="Коментар" required="" tabindex="2" > </textarea> </div>
                         <input class="btn center comment-btn form-button" name="submit"  tabindex="5" value="Відправити" type="submit">   
                     </div>
-                    <div  class="col offset-l1 l6 offset-m1 m6  s12 center hide-on-small-only">  <textarea style="width: 100%;"  class="comment-area" placeholder="Коментар" required="" tabindex="2" > </textarea> </div>
+                    <div class="col offset-l1 l6 offset-m1 m6  s12 center hide-on-small-only">
+                        <textarea style="width: 100%;"  class="comment-area" placeholder="Коментар" required="" tabindex="2" > </textarea>
+                    </div>
                 </div>
             </form> 
         </div>

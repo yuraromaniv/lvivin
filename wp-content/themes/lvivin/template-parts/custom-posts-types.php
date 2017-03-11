@@ -208,53 +208,6 @@
     }
     add_action( 'init', 'register_cpt_places' );
     
-    
-
 // end register custom posts types
 
-
-/*
-// add custom fields for custom posts types
-    add_action( 'add_meta_boxes', function() {
-        add_meta_box(
-            'video_info',    //id атрибут HTML тега, контейнера блоку
-            'Посилання на відео:',    //Заголовок/назва блоку(видно користувачам)
-            'video_info_cb',    //Функція, яка виводить на екран HTML вміст блоку. Повинна виводити результат на екран.
-            'video',    //Назва типу публікації для якої додається блок(може бути масив)
-            'normal',    //Місце де буде видно блок: normal, advanced або side.
-            'high'    //Пріоритет блоку для показу вище або нижче інших блоків: high або low.
-        );
-    });
-
-    function video_info_cb() {
-        global $post;
-        $url = get_post_meta( $post->ID, 'video_url', true );
-
-        //unique identifier, name of hidden field
-        wp_nonce_field( __FILE__, 'video_nonce' );
-    ?>
-        <label for"video_url">URL: </label>
-        <input type="text" name="video_url" id="video_url" class="widefat" value="<?php echo $url; ?>" />
-    <?php
-    }
-
-    add_action('save_post', function() {
-        global $post;
-        if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) return;
-
-        //security check - nonce
-        //verify this came from the our screen and with proper authorization,
-        //because save_post can be triggered at other times
-        if ( $_POST && wp_verify_nonce( $_POST['video_nonce'], __FILE__ ) ) {
-            if ( isset($_POST['video_url']) ) {
-                update_post_meta( $post->ID, 'video_url', $_POST['video_url'] );
-            }
-        }
-    });
-
-
-
-    
-// end add custom fields for custom posts types
-*/
 ?>
