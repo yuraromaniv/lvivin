@@ -117,22 +117,20 @@
         </div>
     </div>
 </div>
-<div style="height: 50px; position: absolute; margin-top: -80px;" id="anchor"> </div>
-<div style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg/third-bg.jpg);" class="third-block">
-    <div class="container third-content">
-        <div class="sign-line">ПРО НАС</div>
-        <div class="line-main">
-            <div class="block-line-black "></div>
-        </div>
-        <div class="center">
-            <img class="about-img" src="<?php echo get_template_directory_uri(); ?>/img/logo/lvivin.png" alt="eng">
-        </div>
-        
-        <?php
-            $query = new WP_Query( 
-                array( 'p' => 138 )
-            );
-            if( $query->have_posts() ) {
+
+<?php
+    $query = new WP_Query( 
+        array( 'p' => 214 )
+    );
+    if( $query->have_posts() ) {
+        echo '
+        <div style="height:50px; position:absolute; margin-top:-80px;" id="anchor"></div>
+        <div style="background-image: url(' . get_template_directory_uri() . '/img/bg/third-bg.jpg);" class="third-block">
+            <div class="container third-content">
+                <div class="sign-line">ПРО НАС</div>
+                <div class="line-main">
+                    <div class="block-line-black "></div>
+                </div>';
                 while ( $query->have_posts() ) {
                     $query->the_post();
                     echo '
@@ -140,80 +138,22 @@
                             get_the_content() . '
                         </div>';
                 } //end while
-                $withcomments = "1";
-                if ( comments_open() || get_comments_number() ) {
-                    comments_template('', true); // если комментирование открыто - мы покажем список комментариев и форму, если закрыто, но кол-во комментов > 0 - покажем только список комментариев
-                } //end if
-            } //end if
-        ?>
-    </div>
-</div>
-
-<div style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg/fourth-bg.jpg); background-size: cover;" class="fourth-block">
-    <div class="container fourth-content">
-        <div class="sign-line white-text">ВІДГУКИ</div>
-        <div class="line-main">
-            <div class="block-line "></div>
-        </div>        
-        <div class="comment-bg ">
-            <div class="row comment-pad">
-                <div class="col l3 m3 ">
-                    <img class="comment-img" src="<?php echo get_template_directory_uri(); ?>/img/comment/comment1.jpg" alt="comment">
-                </div>
-                <div class="col l9 m9">
-                <div class="comment-time">15:10</div>
-                 <div class="comment-date">28.06.2017</div>
-                    <div class="black-text comment-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit deleniti eum aperiam porro beatae totam quos maiores praesentium, dicta exercitationem!
-                    </div>
-                </div>
+                echo '
+                <div id="hypercomments_widget"></div>
+                <script type="text/javascript">
+                    _hcwp = window._hcwp || [];
+                    _hcwp.push({widget:"Stream", widget_id: 88089, limit:4});
+                    (function() {
+                    if("HC_LOAD_INIT" in window)return;
+                    HC_LOAD_INIT = true;
+                    var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+                    var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+                    hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/88089/"+lang+"/widget.js";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hcc, s.nextSibling);
+                    })();
+                </script>
             </div>
-        </div>
-        <div class="comment-bg ">
-            <div class="row comment-pad">
-                <div class="col l3 m3 ">
-                    <img class="comment-img" src="<?php echo get_template_directory_uri(); ?>/img/comment/comment2.jpg" alt="comment">
-                </div>
-                <div class="col l9 m9">
-                <div class="comment-time">15:10</div>
-                 <div class="comment-date">28.06.2017</div>
-                    <div class="black-text comment-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit deleniti eum aperiam porro beatae totam quos maiores praesentium, dicta exercitationem!
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="comment-bg ">
-            <div class="row comment-pad">
-                <div class="col l3 m3 ">
-                    <img class="comment-img" src="<?php echo get_template_directory_uri(); ?>/img/comment/comment3.jpg" alt="comment">
-                </div>
-                <div class="col l9 m9">
-                <div class="comment-time">15:10</div>
-                 <div class="comment-date">28.06.2017</div>
-                    <div class="black-text comment-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae sit cum illum nam quas, debitis adipisci odit suscipit deleniti eum aperiam porro beatae totam quos maiores praesentium, dicta exercitationem!
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="leave-comment">
-            <div class="sign-line white-text">ЗАЛИШИТИ ВІДГУК</div>
-            <div class="line-main">
-                <div class="block-line "></div>
-            </div>
-            <form id="contactform-comment"> 
-                <div class="row contactform-pad">
-                    <div class="col l5 m5 і12">
-                        <input  class="custom-input" name="name" placeholder="Ваше імя" required="" tabindex="1" type="text"> 
-                        <input  class="custom-input" placeholder="Ваш телефон" required="" tabindex="2" type="tel" name="usrtel"> 
-                        <input class="btn center comment-btn form-button" name="submit"  tabindex="5" value="Відправити" type="submit">   
-                    </div>
-                    <div class="col offset-l1 l6 offset-m1 m6  s12 center hide-on-small-only">
-                        <textarea style="width: 100%;"  class="comment-area" placeholder="Коментар" required="" tabindex="2" > </textarea>
-                    </div>
-                </div>
-            </form> 
-        </div>
-    </div>
-</div>
+        </div>';
+    } //end if
+?>

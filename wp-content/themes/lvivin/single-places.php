@@ -78,7 +78,7 @@
                                 echo '
                             </div>
                             <div class="col l4">' .
-                                do_shortcode( '[contact-form-7 id="53" title="Форма для замовлення екскурсії"]' ) . '
+                                do_shortcode( '[contact-form-7 id="42" title="Форма для замовлення дзвінка"]' ) . '
                                 <div class="single-contact ">
                                     <div>
                                         <span>
