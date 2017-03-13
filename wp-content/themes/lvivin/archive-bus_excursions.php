@@ -4,7 +4,8 @@
     <div class="row main-content-bus fix-row-bot">
         <div class="col offset-l1 l6 offset-l1 m9 s12">
             <div class="bus-traver">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates at rerum harum iusto repellat temporibus ad, ratione ducimus alias consequuntur error repudiandae pariatur ipsam. Blanditiis porro laudantium commodi, quis ad.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ullam iste, ipsum quasi et, laudantium repudiandae aspernatur non, ad obcaecati sed, dicta fugit eos cumque fugiat cupiditate! Quas nulla, minus.
+Під час екскурсійних турів ви зможете побачити, як кожна епоха залишила свій слід в історичних пам’ятках міста. Провівши вікенд у Львові ви матимете можливість проникнутись духом міста, відчути на собі його незвичну, старовинну атмосферу та традиції. Різноманітні екскурсії на будь-який смак, індивідуальні або групові, денні або вечірні, міські та заміські, гастрономічні та тематичні екскурсії нададуть вам можливість відчути історію у всій величі та красі.
+Оглядова автобусна екскурсія може відбуватись за будь-якої погоди. З вікон автобуса Ви будете оглядати історичні пам’ятки міста. У Вас буде можливість обрати екскурсію зручною для Вас мовою.
             </div>
             <div class="slogan-bus">
                 Створимо для Вас незабутні враження старого міста!

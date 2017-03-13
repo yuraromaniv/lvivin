@@ -86,28 +86,28 @@
                                 <div class="single-contact ">
                                     <div>
                                         <span>
-                                            <img class="footer-info-img" src="' . get_template_directory_uri() . '/img/footer/phone-call.svg" alt="bus">
+                                            <img class="footer-info-img" src="' . get_template_directory_uri() . '/img/single-icon/phone-call.svg" alt="bus">
                                         </span>
                                         <span class="footer-info-text">+380734650413</span>
                                     </div>
                                     <div>
                                         <span>
-                                            <img class="footer-info-img" src="' . get_template_directory_uri() . '/img/footer/mail-black-envelope-symbol.svg" alt="bus">
+                                            <img class="footer-info-img" src="' . get_template_directory_uri() . '/img/single-icon/mail-black-envelope-symbol.svg" alt="bus">
                                         </span>
                                         <span class="footer-info-text">romaniv.yura95@gmail.com</span>
                                     </div>
                                     <div>
                                         <span>
-                                            <img class="footer-info-img" src="' . get_template_directory_uri() . '/img/footer/marker.svg" alt="bus">
+                                            <img class="footer-info-img" src="' . get_template_directory_uri() . '/img/single-icon/marker.svg" alt="bus">
                                         </span>
                                         <span class="footer-info-text">м. Львів, вул. Зелена, 82</span>
                                     </div>
                                     <div class="center">
                                         <span>
-                                            <img class="footer-info-img" src="' . get_template_directory_uri() . '/img/footer/fb.svg" alt="bus">
+                                            <img class="footer-info-img" src="' . get_template_directory_uri() . '/img/single-icon/fb.svg" alt="bus">
                                         </span>
                                         <span>
-                                            <img class="footer-info-img" src="' . get_template_directory_uri() . '/img/footer/vk.svg" alt="bus">
+                                            <img class="footer-info-img" src="' . get_template_directory_uri() . '/img/single-icon/vk.svg" alt="bus">
                                         </span>
                                     </div>
                                 </div>

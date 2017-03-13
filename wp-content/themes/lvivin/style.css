@@ -202,10 +202,10 @@ input[type="email"] {
     font-size: 27px;
     color: darkred;
     font-weight: bold;
-    /* width: 700px; */
     text-align: center;
     margin-top: 90px;
     font-family: "SegoePrintRegular" !important;
+    text-shadow: white 0 0 3px;
 }
 
 .advantages {
@@ -242,6 +242,7 @@ input[type="email"] {
     color: darkred;
     font-weight: bold;
     font-family: "SegoePrintRegular" !important;
+    text-shadow: white 0 0 3px;
 }
 
 .contact-info {
@@ -290,7 +291,7 @@ input[type="email"] {
 }
 
 .third-content {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .fourth-content {
@@ -298,7 +299,7 @@ input[type="email"] {
 }
 
 .fifth-content {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .six-content {
@@ -487,7 +488,7 @@ input[type="email"] {
 
 .main-content-bus {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .slogan-bus {
@@ -496,12 +497,13 @@ input[type="email"] {
     font-size: 35px;
     color: darkred;
     font-weight: bold;
-    /* width: 700px; */
     text-align: center;
     margin-top: 34px;
     margin-left: 0px;
     padding-bottom: 50px;
     font-family: "SegoePrintRegular" !important;
+    font-family: "SegoePrintRegular" !important;
+    text-shadow: white 0 0 3px;
 }
 
 .contact-info-bus {
@@ -588,7 +590,7 @@ h2 a:hover {
 }
 
 .single-content {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .popular-content-text {
@@ -630,4 +632,22 @@ h2 a:hover {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+.hc__footer, .hcc .hc__menu__right{
+    display: none !important;
+}
+.hc__showmore__item, .hcc .hc__nick__parent, .hc__manager__item, .hcc .hc__time{
+    color: black !important;
+}
+.hc__top__like:hover svg.like path, .hc__top__unlike:hover svg.like path {
+    fill: green !important;
+}
+.hc__top__unlike:hover svg.like path {
+    fill: red !important;
+}
+.hcc .hc__menu__view__img > div > svg > path{
+    fill:red !important:
+}
+.hc-link{
+    display: none !important;
 }

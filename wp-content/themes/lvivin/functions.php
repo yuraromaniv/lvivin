@@ -40,7 +40,7 @@
 	                    <img class="top-news-img img-border" src="' . get_the_post_thumbnail_url( '', '300x200' ) . '" alt="eng">
 	                </div>
 	                <div class="col l9">
-	                    <div class="news-description news-big-sign white-text">' . get_the_title() . '"</div>
+	                    <div class="news-description news-big-sign white-text">' . get_the_title() . '</div>
 	                    <div class="news-description white-text">' . short_post_desc( 375 ) . '</div>
 	                </div>
 	                <div class="line">

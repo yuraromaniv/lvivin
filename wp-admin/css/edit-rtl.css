@@ -402,7 +402,7 @@ form#tags-filter {
 }
 
 .mce-fullscreen #wp-content-wrap .mce-statusbar {
-	visibility: visible !important;
+	display: none !important;
 }
 
 .mce-fullscreen #wp-content-wrap .mce-tinymce .mce-wp-dfw {

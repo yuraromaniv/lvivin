@@ -288,7 +288,7 @@ table.widefat.acf td {
 }
 
 #acf_fields .ui-sortable-placeholder {
-	visibility: visible !important;
+	display: none !important;
 }
 
 #acf_fields .ui-sortable-placeholder td {
