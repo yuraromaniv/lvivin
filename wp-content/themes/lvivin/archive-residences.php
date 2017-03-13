@@ -16,12 +16,12 @@
                 while ( $query->have_posts() ) {
                     $query->the_post();
                     echo '
-                        <div class="col l6 m3 s12">';
+                        <div class="col l6 m12 s12">';
                             //our-partners
                             get_template_part('/template-parts/post', 'slider');
                     echo '
                         </div>
-                        <div class="col l6 m9 s12 ">
+                        <div class="col l6 m12 s12 ">
                             <div class="popular-content-text white-text">';
                                 the_content();
                     echo '

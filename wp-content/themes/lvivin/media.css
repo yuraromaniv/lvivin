@@ -24,11 +24,7 @@
   }
   .slogan {
     width: auto;
-    margin-top: 0px; 
     margin-left: 0px; 
-  }
-  .contact-info div {
-    margin-left: -250px;
   }
   .advantages {
     margin-left: 0px;
@@ -57,5 +53,17 @@
     height: 4rem !important;
     display: inline-block !important;
     background-color: rgba(255, 255, 255, 0.803921568627451) !important;
+  }
+  #popular-slider{
+    padding-left: 0px;
+  }
+  #contactform {
+    margin-top: 100px;
+}
+.main-content-bus #contactform {
+    margin-top: 0px;
+}
+.contact-info-bus{
+    text-align: center;
   }
 }

@@ -633,9 +633,7 @@ h2 a:hover {
     margin-right: auto;
     margin-left: auto;
 }
-.hc__footer, .hcc .hc__menu__right{
-    display: none !important;
-}
+
 .hc__showmore__item, .hcc .hc__nick__parent, .hc__manager__item, .hcc .hc__time{
     color: black !important;
 }
@@ -647,4 +645,35 @@ h2 a:hover {
 }
 .hcc .hc__menu__view__img > div > svg > path{
     fill:red !important:
+}
+.wp-image-195{
+max-width: 100%;
+height:100%;
+}
+.wpcf7-response-output{
+    color: white !important;
+}
+.hc__htcount {
+    display: none;
+}
+#hypercomments_widget > div > div.hcc.hc__right > div.hcc.hc__menu > div.hcc.hc__menu__right > div > div > div:nth-child(1){
+    display: none !important;
+}
+#hypercomments_widget > div > div.hcc.hc__right > div.hcc.hc__menu > div.hcc.hc__menu__right > div > div > div:nth-child(2){
+    display: none !important;
+}
+#hypercomments_widget > div > div.hcc.hc__right > div.hcc.hc__menu > div.hcc.hc__menu__right > div > div{
+    height: 100% !important;
+}
+.hc__ht {
+    display: none !important;
+}
+#hypercomments_widget > div > div.hcc.hc__right > div.hcc.hc__top > div.hcc.hc__top__right > div > div.hcc.hc__menu__view__img > svg > path:nth-child(1), #hypercomments_widget > div > div.hcc.hc__right > div.hcc.hc__top > div.hcc.hc__top__right > div > div.hcc.hc__menu__view__img > svg > path:nth-child(2){
+    fill: #686464 !important;
+}
+.hcc .hc__footer{
+    display: none !important;
+}
+#hypercomments_widget > div > div.hcc.hc__right > div.hcc.hc__menu > div.hcc.hc__menu__right > div > svg > path{
+    fill: #686464 !important;
 }
