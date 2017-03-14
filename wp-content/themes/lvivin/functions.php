@@ -84,3 +84,57 @@ if (!current_user_can('edit_users')) {
   add_filter( 'pre_option_update_core', create_function( '$a', "return null;" ) );
 }
 
+
+//pagination settings
+    //delete H2 from pagination template
+    add_filter( 'navigation_markup_template', 'my_navigation_template', 10, 2 );
+    function my_navigation_template( $template, $class ) {
+	    return '
+	    <nav class="%1$s" role="navigation">
+	        <div class="nav-links">%3$s</div>
+	    </nav>    
+	    ';
+    }
+    $pagination_args = array(
+        'prev_text' => __( '&#8249;' ),
+        'next_text' => __( '&#8250;' ),
+    );
+
+	/*
+    Вид базового шаблону:
+    <nav class="navigation %1$s" role="navigation">
+    <h2 class="screen-reader-text">%2$s</h2>
+    <div class="nav-links">%3$s</div>
+    </nav>
+    */
+//end pagination settings
+
+
+//settings for display archive posts
+    function my_pre_get_posts( $query ) {
+        //якщо запит виконується не в адмінці та якщо запит є головним
+        if ( !is_admin() && $query->is_main_query() ) {
+            $queried_object = get_queried_object();
+            //якщо запит виконується на сторінці архівів
+            if ( $query->is_archive ) {
+            	//якщо сторінка є ахівом екскурсій
+                if ( $queried_object->query_var == 'excursions' ) {
+                    $query->set( 'posts_per_page', 6 );
+                }
+                else if ( $queried_object->query_var == 'bus_excursions' ) {
+                    $query->set( 'posts_per_page', 6 );
+                }
+                else if ( $queried_object->query_var == 'places' ) {
+                    $query->set( 'posts_per_page', 6 );
+                }
+            }
+            /*
+            else if ( $query->is_search ) {
+                $query->set( 'posts_per_page', 10 );
+            }
+            */
+        }
+    }
+    add_action( 'pre_get_posts', 'my_pre_get_posts' );
+//end settings for display archive posts
+

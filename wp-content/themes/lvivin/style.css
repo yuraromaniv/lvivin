@@ -677,3 +677,44 @@ height:100%;
 #hypercomments_widget > div > div.hcc.hc__right > div.hcc.hc__menu > div.hcc.hc__menu__right > div > svg > path{
     fill: #686464 !important;
 }
+
+
+/* pagination */
+.pagination{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: auto;
+    height: auto;
+    right: auto;
+    position: static;
+    margin-top: 0px;
+    color:#000;
+    text-align: center;
+}
+.pagination a{
+    color:#000;
+}
+.current {
+    background-color: #d82d19;
+    width: auto;
+    height: auto;
+    right: auto;
+    position: static;
+    margin: 7px;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+.prev{
+    font-weight: bolder;
+    color: #d82d19;
+    font-size: 25px; 
+}
+.next{
+    font-weight: bolder;
+    color: #d82d19;
+    font-size: 25px; 
+}
+.page-numbers{
+    margin: 7px;
+}
+/* end pagination */

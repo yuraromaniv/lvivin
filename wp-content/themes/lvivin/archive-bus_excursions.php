@@ -56,20 +56,14 @@
         <div class="row fix-row-bot">
             <div class="col l12 m12 І12 news-pad">
                 <?php
-                    $args = array(
-                        'post_type' => 'bus_excursions',
-                        'posts_per_page' => 6,
-                        'publish' => true,
-                        'orderby' => 'date',
-                        'order' => 'DESC'
-                    );
-                    $query = new WP_Query( $args );
-                    if( $query->have_posts() ) {
-                        while ( $query->have_posts() ) {
-                            $query->the_post();
+                    if ( have_posts() ) :
+                        while ( have_posts() ) : the_post(); // Start the Loop
                             show_excursions();
-                        }
-                    }
+                        endwhile; //end while
+                        echo '<div class="clear"></div>';
+                        the_posts_pagination( $pagination_args );
+                        wp_reset_postdata();
+                    endif; //end if
                 ?>
             </div>
         </div>

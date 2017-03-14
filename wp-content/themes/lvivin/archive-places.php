@@ -43,17 +43,8 @@
         <div class="row fix-row-bot">
             <div class="col l12 m12 І12 news-pad">
                 <?php
-                    $args = array(
-                        'post_type' => 'places',
-                        'posts_per_page' => 6,
-                        'publish' => true,
-                        'orderby' => 'date',
-                        'order' => 'DESC'
-                    );
-                    $query = new WP_Query( $args );
-                    if( $query->have_posts() ) {
-                        while ( $query->have_posts() ) {
-                            $query->the_post();
+                    if ( have_posts() ) :
+                        while ( have_posts() ) : the_post(); // Start the Loop
                             echo '
                                 <div class="top-news">
                                     <a href="' . get_the_permalink() . '">
@@ -61,7 +52,7 @@
                                             <img class="top-news-img img-border" src="' . get_the_post_thumbnail_url( '', '300x200' ) . '" alt="eng">
                                         </div>
                                         <div class="col l9">
-                                            <div class="news-description news-big-sign white-text">' . get_the_title() . ' екскурсія "Романтичний Львів"</div>
+                                            <div class="news-description news-big-sign white-text">' . get_the_title() . '</div>
                                             <div class="news-description white-text">' .
                                                 short_post_desc( 475 ) . '
                                             </div>
@@ -71,9 +62,11 @@
                                         </div>
                                     </a>
                                 </div>';
-                        } //end while
-                    } //end if
-                    wp_reset_postdata();
+                        endwhile; //end while
+                        echo '<div class="clear"></div>';
+                        the_posts_pagination( $pagination_args );
+                        wp_reset_postdata();
+                    endif; //end if
                 ?>
             </div>
         </div>
