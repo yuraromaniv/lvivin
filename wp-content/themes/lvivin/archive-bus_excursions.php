@@ -54,18 +54,23 @@
             <div class="block-line"></div>
         </div>
         <div class="row fix-row-bot">
-            <div class="col l12 m12 І12 news-pad">
-                <?php
-                    if ( have_posts() ) :
-                        while ( have_posts() ) : the_post(); // Start the Loop
-                            show_excursions();
-                        endwhile; //end while
-                        echo '<div class="clear"></div>';
+            <?php
+                if ( have_posts() ) :
+                    echo '
+                    <div class="col l12 m12 s12 news-pad">';
+                    while ( have_posts() ) : the_post(); // Start the Loop
+                        show_excursions();
+                    endwhile; //end while
+                    echo '
+                    </div>
+                    <div class="col l12">
+                        <div class="clear"></div>';
                         the_posts_pagination( $pagination_args );
                         wp_reset_postdata();
+                    echo '
+                    </div>';
                     endif; //end if
-                ?>
-            </div>
+            ?>
         </div>
     </div>
 </div>

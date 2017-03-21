@@ -63,13 +63,19 @@
                                     </a>
                                 </div>';
                         endwhile; //end while
-                        echo '<div class="clear"></div>';
-                        the_posts_pagination( $pagination_args );
-                        wp_reset_postdata();
-                    endif; //end if
                 ?>
             </div>
         </div>
+                    <?php
+                        echo '<div class="clear"></div>';
+                       echo ' <div class="col l12">';
+                        the_posts_pagination( $pagination_args );
+                        wp_reset_postdata();
+                         echo ' </div>';
+                    endif; //end if
+                    ?>
+            
+        
     </div>
 </div>
 <?php get_footer(); ?>
