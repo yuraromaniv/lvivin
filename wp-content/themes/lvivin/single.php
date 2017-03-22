@@ -36,6 +36,16 @@
                                 </div>
                             </div>';
                         }
+                        if ( get_post_meta( $post->ID, 'тривалість_екскурсії', true ) ) {
+                            echo '
+                            <div class="exc-des">
+                                <div class="bold-text">Тривалість екскурсії:</div>
+                                <div class="desc-text">' .
+                                    get_post_meta( $post->ID, 'тривалість_екскурсії', true ) . '
+                                </div>
+                            </div>';
+                        }
+                        /*
                         if ( get_post_meta( $post->ID, 'ціна', true ) ) {
                             echo '
                             <div class="exc-des">
@@ -45,11 +55,13 @@
                                 </div>
                             </div>';
                         }
+                        */
                         echo '
                     </div>
                     <div class="row booking">
                         <div class="col l12">
                             <div class="col l7">';
+                                /*
                                 if ( get_post_meta( $post->ID, 'початок_екскурсії', true ) ) {
                                     echo '
                                     <div class="exc-des">
@@ -59,15 +71,7 @@
                                         </div>
                                     </div>';
                                 }
-                                if ( get_post_meta( $post->ID, 'тривалість_екскурсії', true ) ) {
-                                    echo '
-                                    <div class="exc-des">
-                                        <div class="bold-text">Тривалість екскурсії:</div>
-                                        <div class="desc-text">' .
-                                            get_post_meta( $post->ID, 'тривалість_екскурсії', true ) . '
-                                        </div>
-                                    </div>';
-                                }
+                                */
                                 if ( get_post_meta( $post->ID, 'опис', true ) ) {
                                     echo '
                                     <div class="exc-des">
