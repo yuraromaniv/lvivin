@@ -721,3 +721,16 @@ height:100%;
     margin: 7px;
 }
 /* end pagination */
+
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: static !important;
+    left: auto !important;
+    opacity: 1 !important;
+}
+
+[type="radio"]:not(:checked), [type="radio"]:checked {
+    position: static !important;
+    left: auto !important;
+    opacity: 1 !important;
+}

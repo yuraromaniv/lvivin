@@ -34,7 +34,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"> 
     <link href="https://cdn.mapkit.io/v1/infobox.css" rel="stylesheet"> 
-     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/media.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/media.css">
     <?php wp_head(); ?>
 
     <style>
