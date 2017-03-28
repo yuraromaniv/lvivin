@@ -6,20 +6,52 @@
             if ( is_home () ) {
                 bloginfo('name');
             }
-            elseif ( is_category() ) {
-                single_cat_title(); echo " - Категорії";
-            }
-            elseif ( is_search() ) {
-                echo 'Результати пошуку - '; bloginfo('name');
-            }
-            elseif ( is_tag() ) {
-                echo wp_get_document_title( $sep = '', $display = true );
-            }
-            elseif ( is_author() ) {
-                echo get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name') . ' - '; bloginfo('name');
-            }
             else {
-                echo wp_get_document_title();
+                $post_type = get_post_type();
+
+                if ( is_archive() ) {
+                    if ( $post_type == "excursions" ) {
+                        echo 'Екскурсії — ';
+                        bloginfo('name');
+                    }
+                    else if ( $post_type == "bus_excursions" ) {
+                        echo 'Автобусні екскурсії — ';
+                        bloginfo('name');
+                    }
+                    else if ( $post_type == "residences" ) {
+                        echo 'Проживання — ';
+                        bloginfo('name');
+                    }
+                    else if ( $post_type == "places" ) {
+                        echo 'Куди сходити — ';
+                        bloginfo('name');
+                    }
+                    else if ( $post_type == "world_tours" ) {
+                        echo 'Тури по світу — ';
+                        bloginfo('name');
+                    }
+                    else {
+                        bloginfo('name');
+                    }
+
+                }
+                elseif ( is_single() || is_page() ) {
+                    echo wp_get_document_title();
+                }
+                /*
+                else if ( is_search() ) {
+                    echo 'Результати пошуку - '; bloginfo('name');
+                }
+                else if ( is_category() ) {
+                    single_cat_title(); echo " - Категорії";
+                }
+                else if ( is_tag() ) {
+                    echo wp_get_document_title( $sep = '', $display = true );
+                }
+                */
+                else {
+                    echo wp_get_document_title();
+                }
             }
         ?>
     </title>
@@ -60,8 +92,11 @@
         <li><div class="divider"></div></li>
         <li><a class="waves-effect" href="<?php echo get_post_type_archive_link('excursions'); ?>">Екскурсії</a></li>
         <li><a class="waves-effect" href="<?php echo get_post_type_archive_link('bus_excursions'); ?>">Автобусні екскурсії</a></li>
+        <li><a class="waves-effect" href="<?php echo get_post_type_archive_link('world_tours'); ?>">Тури по світу</a></li>
         <li><a class="waves-effect" href="<?php echo get_post_type_archive_link('residences'); ?>">Проживання</a></li>
+        <!--
         <li><a class="waves-effect" href="<?php echo get_post_type_archive_link('places'); ?>">Куди сходити</a></li>
+        -->
         <li><a class="waves-effect" href="<?php echo get_home_url(); ?>/#anchor">Про нас</a></li>
     </ul>
     <div id="header">
@@ -93,17 +128,27 @@
                         </a>
                     </div>
                     <div class="menu-link center">
+                        <a href="<?php echo get_post_type_archive_link('world_tours'); ?>">
+                            <img class="menu-link-img" src="<?php echo get_template_directory_uri(); ?>/img/menu-icon/bus.svg" alt="bus">
+                            <div>Тури по світу</div>
+                        </a>
+                    </div>
+                    <div class="menu-link center">
                         <a href="<?php echo get_post_type_archive_link('residences'); ?>">
                             <img class="menu-link-img" src="<?php echo get_template_directory_uri(); ?>/img/menu-icon/house.svg" alt="house">
                             <div>Проживання</div>
                         </a>
                     </div>
+                    
+                    <!--
                     <div class="menu-link center">
                         <a href="<?php echo get_post_type_archive_link('places'); ?>">
                             <img class="menu-link-img" src="<?php echo get_template_directory_uri(); ?>/img/menu-icon/where.svg" alt="where">
                             <div>Куди сходити</div>
                         </a>
                     </div>
+                    -->
+                    
                     <div class="menu-link center">
                         <a href="<?php echo get_home_url(); ?>/#anchor">
                             <img class="menu-link-img" src="<?php echo get_template_directory_uri(); ?>/img/menu-icon/info.svg" alt="info">
