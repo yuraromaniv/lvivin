@@ -59,7 +59,7 @@
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -129,7 +129,7 @@
                     </div>
                     <div class="menu-link center">
                         <a href="<?php echo get_post_type_archive_link('world_tours'); ?>">
-                            <img class="menu-link-img" src="<?php echo get_template_directory_uri(); ?>/img/menu-icon/bus.svg" alt="bus">
+                            <img class="menu-link-img" src="<?php echo get_template_directory_uri(); ?>/img/menu-icon/airplane.svg" alt="bus">
                             <div>Тури по світу</div>
                         </a>
                     </div>

@@ -1,4 +1,12 @@
   @media screen and (max-width: 768px) {
+    .tap-target-wrapper {
+    width: 600px;
+    height: 600px;
+  }
+  .tap-target-content div{
+    margin-left: 0px;
+}
+
    .footer-img{
       position: absolute;
       bottom: 0px;

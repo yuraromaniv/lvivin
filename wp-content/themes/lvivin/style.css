@@ -734,3 +734,41 @@ height:100%;
     left: auto !important;
     opacity: 1 !important;
 }
+
+#menu{
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 999;
+}
+
+.visa-button{
+    width: 90px;
+    height: 90px;
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+.visa-button span{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.visa-icon{
+    position: relative;
+    top: -10px;
+    width: 20px;
+}
+
+.tap-target{
+    background-color: #26a69a;
+}
+
+.tap-target-content div{
+    margin-left: 50px;
+}
+
+.tap-target-content div a{
+    color: white;
+    font-weight: bold;
+}

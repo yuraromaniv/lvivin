@@ -41,14 +41,30 @@
 		<img src="<?php echo get_template_directory_uri(); ?>/img/footer/lviv_silhouette3.svg" alt="footer" class="hide-on-med-and-up footer-img"/>
 	</div>
 
+	<a id="menu" class="pulse waves-light btn btn-floating visa-button" onclick="$('.tap-target').tapTarget('open')"><p><span>Візова</span> підтримка</p><img class="visa-icon" src="<?php echo get_template_directory_uri(); ?>/img/menu-icon/visa.svg" alt="visa"></a>
+
+	  <div class="tap-target" data-activates="menu">
+    <div class="tap-target-content">
+    <div>
+      <p><a href="http://www.leotour.com.ua/files/Documents_Croatia.pdf" target="_blank" rel="nofollow">Хорватія</a></p>
+      <p><a href="http://www.leotour.com.ua/files/Documents_Hungary.pdf" target="_blank" rel="nofollow">УГОРЩИНА</a></p>
+      <p><a href="http://www.leotour.com.ua/files/Documents_Slovenia.pdf" target="_blank" rel="nofollow">СЛОВЕНІЯ</a></p>
+      <p><a href="http://www.leotour.com.ua/files/Documents_Slovakia.pdf" target="_blank" rel="nofollow">СЛОВАЧЧИНА</a></p>
+     </div>
+    </div>
+  </div>
 
 
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jssor.slider-22.2.8.min.js" type="text/javascript"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOlbn3nbFpK7G2GQqlg55ZIsixt57zo0o&extension=.js"></script> 
 	<script src="https://cdn.mapkit.io/v1/infobox.js"></script> 
+
+	<script>
+		$('.tapTarget').tapTarget('open');
+	</script>
 
 	<script type="text/javascript">
 		jssor_1_slider_init = function() {
