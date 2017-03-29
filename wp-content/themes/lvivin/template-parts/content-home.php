@@ -54,7 +54,7 @@
         <div class="row fix-row-bot">
             <?php
                 $args = array(
-                    'post_type' => array('excursions','bus_excursions'),
+                    'post_type' => array('excursions', 'bus_excursions', 'world_tours'),
                     'posts_per_page' => 5,
                     'publish' => true,
                     'orderby' => 'date',

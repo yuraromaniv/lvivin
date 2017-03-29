@@ -46,7 +46,7 @@
 	  <div class="tap-target" data-activates="menu">
     <div class="tap-target-content">
     <div>
-      <p><a href="http://www.leotour.com.ua/files/Documents_Croatia.pdf" target="_blank" rel="nofollow">Хорватія</a></p>
+      <p><a href="http://www.leotour.com.ua/files/Documents_Croatia.pdf" target="_blank" rel="nofollow">ХОРВАТІЯ</a></p>
       <p><a href="http://www.leotour.com.ua/files/Documents_Hungary.pdf" target="_blank" rel="nofollow">УГОРЩИНА</a></p>
       <p><a href="http://www.leotour.com.ua/files/Documents_Slovenia.pdf" target="_blank" rel="nofollow">СЛОВЕНІЯ</a></p>
       <p><a href="http://www.leotour.com.ua/files/Documents_Slovakia.pdf" target="_blank" rel="nofollow">СЛОВАЧЧИНА</a></p>

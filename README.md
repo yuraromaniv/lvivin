@@ -1,5 +1,11 @@
 # lvivin
 
+ver. 0.24
+  - залишив для турів по світу тільки опис
+  - створив сторінки:
+    - archive-world_tours.php
+    - single-world_tours.php
+
 ver. 0.22
   - добавив новий тип екскурсій - "Екскурсії по світу" (custom-posts-types.php)
   - додав вкладку "Екскурсії по світу" у хедер (header.php)
