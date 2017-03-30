@@ -32,6 +32,11 @@ html {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
 }
+.world-tour-text{
+    margin-top: -14px;
+    padding-left: 10px;
+}
+
 
 .side-nav {
     z-index: 9999 !important;
@@ -583,6 +588,10 @@ h2 a:hover {
 
 #popular-slider {
     padding-left: 10px;
+    padding-right: 10px;
+
+}
+.fix-top{
     margin-top: 20px;
 }
 
@@ -597,7 +606,9 @@ h2 a:hover {
 .popular-content-text {
     margin-top: 20px;
 }
-
+.fix-title{
+    height: 50px !important;
+}
 .bold-text {
     font-weight: bold;
 }

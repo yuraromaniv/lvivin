@@ -87,7 +87,7 @@
                                     <a href="' . get_the_permalink() . '">
                                         <div class="top-news">
                                             <img class="top-news-img" src="' . get_the_post_thumbnail_url( '', '300x200' ) . '" alt="eng">
-                                            <div class="news-description  white-text">' . get_the_title() . '</div>
+                                            <div class="news-description fix-title white-text">' . get_the_title() . '</div>
                                             <div class="line">
                                                 <div class="block-line"></div>
                                             </div>

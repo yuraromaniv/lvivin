@@ -18,18 +18,18 @@
                     echo '
                     </div>
                     
-                    <div>';
+                    <div class="world-tour-text">';
                         the_content();
                     echo '
                     </div>
                     
                     <div class="row booking">
-                        <div class="col l12">
-                            <div class="col l6">' .
+                        <div class="col l12 m12 s12">
+                            <div class="col l6 m12 s12">' .
                                 do_shortcode( '[contact-form-7 id="53" title="Форма для замовлення екскурсії"]' ) . '
                             </div>
-                            <div class="col l6">
-                                <div class="single-contact ">
+                            <div class="col l6 m12 s12">
+                                <div class="single-contact center">
                                     <div>
                                         <span>
                                             <img class="footer-info-img" src="' . get_template_directory_uri() . '/img/single-icon/phone-call.svg" alt="bus">

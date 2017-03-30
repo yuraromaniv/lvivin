@@ -16,7 +16,7 @@
                 while ( $query->have_posts() ) {
                     $query->the_post();
                     echo '
-                        <div class="col l6 m12 s12">';
+                        <div class="col l6 m12 s12 fix-top">';
                             //our-partners
                             get_template_part('/template-parts/post', 'slider');
                     echo '
