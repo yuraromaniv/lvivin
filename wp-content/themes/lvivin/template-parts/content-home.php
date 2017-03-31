@@ -67,27 +67,28 @@
                         $query->the_post();
                         if ( $post_count == 0 ) {
                             echo '
-                                <div class="col l5 m6 news-pad">
-                                    <a href="' . get_the_permalink() . '">
-                                        <div class="top-news">
-                                            <img class="top-news-img img-border" src="' . get_the_post_thumbnail_url( '', '450x300' ) . '" alt="eng">
-                                            <div class="news-description news-big-sign white-text">' . get_the_title() . '</div>
-                                            <div class="line">
-                                                <div class="block-line"></div>
-                                            </div>
-                                            <div class="news-description white-text">' . short_post_desc( 375 ) . '</div>
+                            <div class="col l5 m6 news-pad">
+                                <a href="' . get_the_permalink() . '">
+                                    <div class="top-news">
+                                        <img class="top-news-img img-border" src="' . get_the_post_thumbnail_url( '', '450x300' ) . '" alt="eng">
+                                        <div class="news-description news-big-sign white-text">' . short_post_title(70) . '</div>
+                                        <div class="line">
+                                            <div class="block-line"></div>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="col l7 m6 news-pad">';
+                                        <div class="news-description white-text">' . short_post_desc( 375 ) . '</div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col l7 m6 news-pad">';
                         }
-                        else if ( $post_count > 0 && $post_count < 4) {
-                            echo '
+                        else if ( $post_count > 0 && $post_count < 5) {
+                                echo '
                                 <div class="col l6 m6">
                                     <a href="' . get_the_permalink() . '">
                                         <div class="top-news">
                                             <img class="top-news-img" src="' . get_the_post_thumbnail_url( '', '300x200' ) . '" alt="eng">
-                                            <div class="news-description fix-title white-text">' . get_the_title() . '</div>
+                                            <div class="news-description fix-title white-text">' . short_post_title(65) . '</div>
                                             <div class="line">
                                                 <div class="block-line"></div>
                                             </div>
@@ -96,12 +97,12 @@
                                 </div>';
                         }
                         else {
-                            echo '
+                                echo '
                                 <div class="col l6 m6">
                                     <a href="' . get_the_permalink() . '">
                                         <div class="top-news">
                                             <img class="top-news-img" src="' . get_the_post_thumbnail_url( '', '300x200' ) . '" alt="eng">
-                                            <div class="news-description  white-text">' . get_the_title() . '</div>
+                                            <div class="news-description fix-title white-text">' . short_post_title(65) . '</div>
                                             <div class="line">
                                                 <div class="block-line"></div>
                                             </div>

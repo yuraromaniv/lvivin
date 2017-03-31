@@ -81,7 +81,22 @@
                                         $content = str_replace( ']]>', ']]&gt;', $content );
                                         echo $content;
                                     echo '
-                                    </div>';
+                                    </div>
+                                    
+                                    <div id="hypercomments_widget"></div>
+                                    <script type="text/javascript">
+                                        _hcwp = window._hcwp || [];
+                                        _hcwp.push({widget_id: 88089, widget:"Stream"});
+                                        (function() {
+                                            if("HC_LOAD_INIT" in window)return;
+                                            HC_LOAD_INIT = true;
+                                            var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+                                            var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+                                            hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/88089/"+lang+"/widget.js";
+                                            var s = document.getElementsByTagName("script")[0];
+                                            s.parentNode.insertBefore(hcc, s.nextSibling);
+                                        })();
+                                    </script>';
                                 }
                                 echo '
                             </div>
