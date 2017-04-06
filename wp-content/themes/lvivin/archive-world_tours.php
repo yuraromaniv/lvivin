@@ -4,12 +4,12 @@
     <div class="row main-content-bus fix-row-bot">
         <div class="col offset-l1 l6 offset-l1 m9 s12">
             <div class="bus-traver">
-                Lorem ipsum dolor sit amet, tation tincidunt vituperatoribus sit ex. Ex modus platonem duo, consetetur disputando duo et, per no case constituto. Ex ius mentitum necessitatibus.
-                Quod ludus civibus pro in. Vel nobis patrioque deterruisset no, te nam legendos quaestio, odio eros ne sea.Harum labitur electram ex qui, corrumpit sadipscing scriptorem mea ex.
-                Homero phaedrum convenire his id, justo veniam eu eam. Partem epicurei menandri est ut. Duo numquam fabellas ad, cibo possit persecuti per no. Vis modus dicant essent cu.
+                Метою нашої компанії є надання туристичних послуг на високому рівні. Нашою візитною карткою є уважне і доброзичливе ставлення до клієнтів, адже наші працівники прагнуть задовільнити всі їх побажання. 
+                Ми пропонуємо підбір турів для відпочинку в будь-якій країні світу, опис курортів, готелів та екскурсій, корисна інформація про країну.
+                Ми працюємо з усіма категоріями клієнтів – від студентів до туристів, які розраховують на тури VIP рівня. Професійни підхід допоможуть Вам в правильному підборі Вашого відпочинку і відпочинку Вашої сім'ї.
             </div>
             <div class="slogan-bus">
-                Створимо для Вас незабутні враження старого міста!
+                Створимо для Вас незабутні враження!
             </div>
         </div>
         <div class="col l3 offset-l1 m3 s12">
