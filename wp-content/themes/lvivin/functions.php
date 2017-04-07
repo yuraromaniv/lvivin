@@ -138,3 +138,15 @@ if (!current_user_can('edit_users')) {
     add_action( 'pre_get_posts', 'my_pre_get_posts' );
 //end settings for display archive posts
 
+
+//category settings
+    function my_pre_get_tags( $query ) {
+        if ( !is_admin() && $query->is_archive ) {
+            if ( $query->is_tag || $query->is_category ) {
+                //$query->set( 'post_type', array('news', 'articles', 'blogs', 'partner-news', 'video') );
+                $query->set( 'post_type', 'any' );
+            }
+        }
+    }
+    add_action( 'pre_get_posts', 'my_pre_get_tags' );
+//end category settings

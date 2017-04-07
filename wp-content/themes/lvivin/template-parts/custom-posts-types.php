@@ -253,7 +253,7 @@
             'map_meta_cap' => true,
             'hierarchical' => true,
             'supports' => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions' ), // 'author',
-            //'taxonomies' => array( 'post_tag', 'category' ),
+            'taxonomies' => array( 'category' ), //'post_tag',
             'has_archive' => true,
             'rewrite' => true,
             'query_var' => true,
