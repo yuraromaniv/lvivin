@@ -35,6 +35,7 @@ html {
 .world-tour-text{
     margin-top: -14px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 
@@ -799,4 +800,8 @@ height:100%;
 }
 .country-element{
     margin-bottom: 20px;
+}
+
+.modal-content p{
+    text-align: justify !important;
 }

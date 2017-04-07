@@ -286,6 +286,13 @@ $(".button-collapse").sideNav();
 	});
 </script>
 
+<script type="text/javascript">
+	$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+</script>
+
 <?php wp_footer(); ?>
 </body>
 </html>
