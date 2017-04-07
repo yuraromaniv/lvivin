@@ -783,3 +783,20 @@ height:100%;
     color: white;
     font-weight: bold;
 }
+
+.country-sign{
+    font-size: 30px;
+    color: white;
+}
+
+.county-image{
+    width: 150px;
+}
+.country-list{
+    margin-bottom: 0 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.country-element{
+    margin-bottom: 20px;
+}

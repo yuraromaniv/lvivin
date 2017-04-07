@@ -47,10 +47,10 @@
 
 <div style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg/second-bg.jpg);" class="second-block ">
     <div class="container second-content">
-        <div class="sign-line white-text">НОВИНКИ</div>
+        <!-- <div class="sign-line white-text">НОВИНКИ</div>
         <div class="line-main">
             <div class="block-line"></div>
-        </div>
+        </div> -->
         <div class="row fix-row-bot">
             <?php
                 $args = array(

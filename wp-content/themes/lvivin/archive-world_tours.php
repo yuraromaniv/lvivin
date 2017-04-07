@@ -50,11 +50,42 @@
 
 <div style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg/second-bg.jpg);" class="second-block ">
     <div class="container second-content">
-        <div class="sign-line white-text">ЕКСКУРСІЇ</div>
+    <div class="row country-list">
+        <div class="col l4 m4 s6 country-element center">
+            <img class="county-image center" src="<?php echo get_template_directory_uri(); ?>/img/worldtours/european-union.svg">
+            <div class="country-sign">ЄВРОПА</div>
+        </div>
+        <div class="col l4 m4 s6 country-element center">
+            <img class="county-image center" src="<?php echo get_template_directory_uri(); ?>/img/worldtours/bulgaria.svg">
+            <div class="country-sign">БОЛГАРІЯ</div>
+        </div>
+        <div class="col l4 m4 s6 country-element center">
+            <img class="county-image center" src="<?php echo get_template_directory_uri(); ?>/img/worldtours/greece.svg">
+            <div class="country-sign">ГРЕЦІЯ</div>
+        </div>
+        <div class="col l4 m4 s6 country-element center">
+            <img class="county-image center" src="<?php echo get_template_directory_uri(); ?>/img/worldtours/montenegro.svg">
+            <div class="country-sign">ЧОРНОГОРІЯ</div>
+        </div>
+        <div class="col l4 m4 s6 country-element center">
+            <img class="county-image center" src="<?php echo get_template_directory_uri(); ?>/img/worldtours/turkey.svg">
+            <div class="country-sign">ТУРЦІЯ</div>
+        </div>
+        <div class="col l4 m4 s6 country-element center">
+            <img class="county-image center" src="<?php echo get_template_directory_uri(); ?>/img/worldtours/egypt.svg">
+            <div class="country-sign">ЄГИПЕТ</div>
+        </div>
+    </div>
+
+
+
+
+
+        <!-- <div class="sign-line white-text">ЕКСКУРСІЇ</div>
         <div class="line-main">
             <div class="block-line"></div>
         </div>
-       <div class="row fix-row-bot">
+               <div class="row fix-row-bot">
             <?php
                 if ( have_posts() ) :
                     echo '
@@ -72,7 +103,7 @@
                     </div>';
                     endif; //end if
             ?>
-        </div>
+        </div> -->
     </div>
 </div>
 <?php get_footer(); ?>
